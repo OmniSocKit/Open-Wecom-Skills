@@ -1,0 +1,40 @@
+# ── 系统文件 ──
+.DS_Store
+Thumbs.db
+
+# ── 内部文件（不开源） ──
+MEMORY.md
+updatelog.md
+TODO.md
+docs/guides/quickstart.md
+
+# ── 内部工具配置（不开源） ──
+skills/.omc/
+
+# ── 爬虫脚本（版权争议） ──
+scripts/
+
+# ── 原始研究文档（已重组到 docs/） ──
+research/
+
+# ── IDE / 编辑器 ──
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ── Python ──
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ── Node / VitePress ──
+node_modules/
+dist/
+.vitepress/cache/
+.vitepress/dist/
+.vitepress/dist-single/
+.env
+.env.local

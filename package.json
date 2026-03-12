@@ -1,0 +1,27 @@
+{
+  "name": "open-wecom-skills",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "让你的 AI 大模型成为企业微信开发专家 — 41 Skills · 550+ APIs · 三大开发模式全覆盖",
+  "private": true,
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "keywords": [
+    "wecom",
+    "wechat-work",
+    "ai",
+    "skills"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "lucide-vue-next": "^0.577.0",
+    "vitepress": "^1.6.4"
+  }
+}
