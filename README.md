@@ -9,6 +9,7 @@
 [English](./README.en.md) | 简体中文
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+[![Docs](https://img.shields.io/badge/Docs-GitHub_Pages-14b8a6?logo=github)](https://iuraixmi.github.io/Open-Wecom-Skills/)
 
 </div>
 
@@ -194,20 +195,6 @@ Open WeCom Skills 可配合以下 AI 工具使用：
 | **Gemini Code Assist** | 注册到 skills 目录 |
 | **Cline** | 注册到知识库 |
 | **其他 LLM** | 直接注入 SKILL 文本作为 System Prompt |
-
----
-
-## 📖 文档
-
-| 文档 | 说明 |
-|------|------|
-| [快速入门](docs/guides/quickstart.md) | 5 步完成自建应用创建到首次 API 调用 |
-| [SKILL 架构设计](docs/guides/architecture.md) | SKILL 的内部结构规范，贡献者必读 |
-| [API 模块索引](docs/references/api-index.md) | 企微官方模块 → SKILL 映射表 |
-| [实战对比示例](docs/showcase/skill-demo-response.md) | 完整场景演示：有 SKILL vs 没有 SKILL 的回答差异 |
-| [场景测试](docs/testing/) | P0/P1 场景测试用例与结果 |
-| [贡献指南](CONTRIBUTING.md) | 如何贡献新 SKILL 或改进现有 SKILL |
-| [变更日志](CHANGELOG.md) | 版本更新记录 |
 
 ---
 
