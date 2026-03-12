@@ -26,8 +26,8 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install dependencies
-        run: npm install
+      - name: Clean install
+        run: rm -f package-lock.json && npm install
 
       - name: Build VitePress
         run: npm run docs:build
