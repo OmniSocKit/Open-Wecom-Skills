@@ -1,112 +1,112 @@
 ---
-title: Skills 总览
+title: Skills Overview
 ---
 
 # Skills
 
-让你的 AI 大模型成为企业微信开发专家，覆盖 **三大开发模式** 共 **41 个 SKILL**。
+Make your AI model a WeCom (Enterprise WeChat) development expert, covering **3 development modes** with **41 SKILLs**.
 
-每个 SKILL 包含：结构化 API 速查 · 参数详情 · 踩坑指南 · 五语言代码模板
-
----
-
-## 基础域
-
-| Skill | 适用场景 |
-|-------|---------|
-| [wecom-core](/skills/enterprise/wecom-core) | access_token 鉴权 · 回调验签 · 频率限制 · 错误码映射 |
-| [wecom-contact](/skills/enterprise/wecom-contact) | 成员 / 部门 / 标签 CRUD · 异步批量导入导出 · 互联企业 |
-| [wecom-app](/skills/enterprise/wecom-app) | 应用 CRUD · 自定义菜单 · 工作台 · 自建机器人 |
-| [wecom-message](/skills/enterprise/wecom-message) | 消息发送 · 模板卡片 · 群聊 · 撤回 · 接收回调 |
-| [wecom-media](/skills/enterprise/wecom-media) | 临时素材上传下载 · 图片 · 语音 · 异步上传 |
-| [wecom-auth](/skills/enterprise/wecom-auth) | OAuth2 网页授权 · 扫码登录 · 二次验证 |
-
-## CRM 域
-
-| Skill | 适用场景 |
-|-------|---------|
-| [wecom-crm-customer](/skills/enterprise/wecom-crm-customer) | 客户列表 · 详情 · 备注 · unionid 转换 |
-| [wecom-crm-tag](/skills/enterprise/wecom-crm-tag) | 企业标签 · 规则组标签 · 编辑客户标签 |
-| [wecom-crm-masssend](/skills/enterprise/wecom-crm-masssend) | 创建群发 · 欢迎语 · 群发记录 · 提醒/停止 |
-| [wecom-crm-contactway](/skills/enterprise/wecom-crm-contactway) | 联系我配置 · 渠道活码 · 入群方式 · 临时会话 |
-| [wecom-crm-moment](/skills/enterprise/wecom-crm-moment) | 创建朋友圈任务 · 发表记录 · 互动数据 |
-| [wecom-crm-group](/skills/enterprise/wecom-crm-group) | 群列表 · 群详情 · opengid 转换 · 加群方式 |
-| [wecom-crm-transfer](/skills/enterprise/wecom-crm-transfer) | 在职继承 · 离职继承 · 接替状态查询 |
-| [wecom-crm-acquisition](/skills/enterprise/wecom-crm-acquisition) | 获客链接 · 客户信息 · 额度统计 |
-
-## 办公域
-
-| Skill | 适用场景 |
-|-------|---------|
-| [wecom-approval](/skills/enterprise/wecom-approval) | 审批模板 · 实例 CRUD · 流程推进 · 回调 |
-| [wecom-doc](/skills/enterprise/wecom-doc) | 文档 CRUD · 权限管理 · 收集表 |
-| [wecom-meeting](/skills/enterprise/wecom-meeting) | 预约会议 · 布局 · PSTN · 网络研讨会 |
-| [wecom-office-checkin](/skills/enterprise/wecom-office-checkin) | 打卡规则 · 打卡记录 · 月度汇总 |
-| [wecom-office-calendar](/skills/enterprise/wecom-office-calendar) | 日历 CRUD · 日程管理 · 参与者 |
-| [wecom-office-email](/skills/enterprise/wecom-office-email) | 发送邮件 · 收件箱 · 群组邮箱 |
-| [wecom-office-wedrive](/skills/enterprise/wecom-office-wedrive) | 空间 CRUD · 文件管理 · 权限 · 分块上传 |
-| [wecom-office-live](/skills/enterprise/wecom-office-live) | 预约直播 · 详情 · 观看统计 · 回放 |
-
-## 客服域
-
-| Skill | 适用场景 |
-|-------|---------|
-| [wecom-kf](/skills/enterprise/wecom-kf) | 客服账号 · 接待人员 · 会话 · 消息收发 · 知识库 |
-
-## 客户端域
-
-| Skill | 适用场景 |
-|-------|---------|
-| [wecom-jssdk](/skills/enterprise/wecom-jssdk) | 网页应用接入 · 签名 · 分享 · 定位 · 扫码 |
-| [wecom-miniapp](/skills/enterprise/wecom-miniapp) | 登录认证 · 客户端 API · jwecom 对象 |
-| [wecom-mobile-sdk](/skills/enterprise/wecom-mobile-sdk) | iOS · Android · Harmony 登录 / 分享 / 客服 |
-
-## 高级域
-
-| Skill | 适用场景 |
-|-------|---------|
-| [wecom-advanced](/skills/enterprise/wecom-advanced) | 会话存档 · 企业支付 · 电子发票 · 汇报 |
-| [wecom-security](/skills/enterprise/wecom-security) | 文件防泄漏 · 设备管理 · 人事助手 |
-| [wecom-data-intelligence](/skills/enterprise/wecom-data-intelligence) | 会话分析 · AI 模型 · 知识集 · 专区程序 |
-
-## 行业域
-
-| Skill | 适用场景 |
-|-------|---------|
-| [wecom-vertical](/skills/enterprise/wecom-vertical) | 家校沟通 · 政民沟通 · 企业互联 · 上下游 · 收款 |
+Each SKILL includes: Structured API reference · Parameter details · Gotcha guide · 5-language code templates
 
 ---
 
-## ISV 服务商代开发
+## Core Domain
 
-使用 `suite_access_token` / `provider_access_token` 体系。
+| Skill | Use Cases |
+|-------|-----------|
+| [wecom-core](/en/skills/enterprise/wecom-core) | access_token auth · callback verification · rate limits · error code mapping |
+| [wecom-contact](/en/skills/enterprise/wecom-contact) | Member / department / tag CRUD · async batch import/export · linked corp |
+| [wecom-app](/en/skills/enterprise/wecom-app) | App CRUD · custom menus · workbench · self-built bot |
+| [wecom-message](/en/skills/enterprise/wecom-message) | Send messages · template cards · group chat · recall · callbacks |
+| [wecom-media](/en/skills/enterprise/wecom-media) | Temp media upload/download · images · voice · async upload |
+| [wecom-auth](/en/skills/enterprise/wecom-auth) | OAuth2 web auth · QR login · secondary verification |
 
-| Skill | 适用场景 |
-|-------|---------|
-| [wecom-isv-core](/skills/isv/wecom-isv-core) | 三级凭证体系 · 自建差异 · 多企业架构 |
-| [wecom-isv-auth](/skills/isv/wecom-isv-auth) | 预授权码 · 永久授权码 · 授权信息管理 |
-| [wecom-isv-callback](/skills/isv/wecom-isv-callback) | 双通道架构 · 指令回调 + 数据回调 |
-| [wecom-isv-license](/skills/isv/wecom-isv-license) | 订单管理 · 帐号激活 / 续期 / 转移 |
-| [wecom-isv-billing](/skills/isv/wecom-isv-billing) | 定价策略 · 商户号 · 收款订单 |
-| [wecom-isv-jssdk](/skills/isv/wecom-isv-jssdk) | 代开发签名 · 多企业 ticket · OAuth 差异 |
-| [wecom-isv-provider](/skills/isv/wecom-isv-provider) | 登录授权 · ID 转换 · 企业推广注册 |
-| [wecom-isv-appendix](/skills/isv/wecom-isv-appendix) | 错误码汇总 · 频率限制 · 兼容性矩阵 |
+## CRM Domain
+
+| Skill | Use Cases |
+|-------|-----------|
+| [wecom-crm-customer](/en/skills/enterprise/wecom-crm-customer) | Customer list · details · notes · unionid conversion |
+| [wecom-crm-tag](/en/skills/enterprise/wecom-crm-tag) | Corporate tags · rule group tags · edit customer tags |
+| [wecom-crm-masssend](/en/skills/enterprise/wecom-crm-masssend) | Mass messaging · welcome messages · send records · remind/stop |
+| [wecom-crm-contactway](/en/skills/enterprise/wecom-crm-contactway) | Contact Me config · channel QR codes · group entry · temp chat |
+| [wecom-crm-moment](/en/skills/enterprise/wecom-crm-moment) | Create Moments task · publish records · interaction data |
+| [wecom-crm-group](/en/skills/enterprise/wecom-crm-group) | Group list · group details · opengid conversion · join methods |
+| [wecom-crm-transfer](/en/skills/enterprise/wecom-crm-transfer) | On-job transfer · resigned transfer · takeover status query |
+| [wecom-crm-acquisition](/en/skills/enterprise/wecom-crm-acquisition) | Acquisition links · customer info · quota statistics |
+
+## Office Domain
+
+| Skill | Use Cases |
+|-------|-----------|
+| [wecom-approval](/en/skills/enterprise/wecom-approval) | Approval templates · instance CRUD · process progression · callbacks |
+| [wecom-doc](/en/skills/enterprise/wecom-doc) | Document CRUD · permission management · forms |
+| [wecom-meeting](/en/skills/enterprise/wecom-meeting) | Schedule meeting · layout · PSTN · webinars |
+| [wecom-office-checkin](/en/skills/enterprise/wecom-office-checkin) | Check-in rules · check-in records · monthly summary |
+| [wecom-office-calendar](/en/skills/enterprise/wecom-office-calendar) | Calendar CRUD · schedule management · attendees |
+| [wecom-office-email](/en/skills/enterprise/wecom-office-email) | Send email · inbox · group mailbox |
+| [wecom-office-wedrive](/en/skills/enterprise/wecom-office-wedrive) | Space CRUD · file management · permissions · chunked upload |
+| [wecom-office-live](/en/skills/enterprise/wecom-office-live) | Schedule live · details · viewer stats · replays |
+
+## Customer Service Domain
+
+| Skill | Use Cases |
+|-------|-----------|
+| [wecom-kf](/en/skills/enterprise/wecom-kf) | Service accounts · agents · sessions · messaging · knowledge base |
+
+## Client Domain
+
+| Skill | Use Cases |
+|-------|-----------|
+| [wecom-jssdk](/en/skills/enterprise/wecom-jssdk) | Web app integration · signing · sharing · location · QR scan |
+| [wecom-miniapp](/en/skills/enterprise/wecom-miniapp) | Login auth · client API · jwecom object |
+| [wecom-mobile-sdk](/en/skills/enterprise/wecom-mobile-sdk) | iOS · Android · Harmony login / share / service |
+
+## Advanced Domain
+
+| Skill | Use Cases |
+|-------|-----------|
+| [wecom-advanced](/en/skills/enterprise/wecom-advanced) | Chat archive · enterprise payment · e-invoice · reports |
+| [wecom-security](/en/skills/enterprise/wecom-security) | File DLP · device management · HR assistant |
+| [wecom-data-intelligence](/en/skills/enterprise/wecom-data-intelligence) | Conversation analysis · AI models · knowledge sets · data zone apps |
+
+## Industry Domain
+
+| Skill | Use Cases |
+|-------|-----------|
+| [wecom-vertical](/en/skills/enterprise/wecom-vertical) | School-parent · gov-citizen · enterprise interconnect · supply chain · payments |
 
 ---
 
-## 第三方应用开发
+## ISV (Service Provider) Development
 
-应用市场分发，凭证体系复用 ISV SKILL。
+Uses `suite_access_token` / `provider_access_token` system.
 
-| Skill | 适用场景 |
-|-------|---------|
-| [wecom-3rd-quickstart](/skills/third-party/wecom-3rd-quickstart) | 注册 → 授权 → 上架 → 推广全流程 |
-| [wecom-3rd-idconvert](/skills/third-party/wecom-3rd-idconvert) | corpid / userid / external_userid 加密互转 |
-| [wecom-3rd-data](/skills/third-party/wecom-3rd-data) | 获客组件 · 会话存档 · AI 模型接入 |
+| Skill | Use Cases |
+|-------|-----------|
+| [wecom-isv-core](/en/skills/isv/wecom-isv-core) | Triple-token system · self-built differences · multi-tenant architecture |
+| [wecom-isv-auth](/en/skills/isv/wecom-isv-auth) | Pre-auth code · permanent auth code · auth info management |
+| [wecom-isv-callback](/en/skills/isv/wecom-isv-callback) | Dual-channel architecture · command callbacks + data callbacks |
+| [wecom-isv-license](/en/skills/isv/wecom-isv-license) | Order management · account activation / renewal / transfer |
+| [wecom-isv-billing](/en/skills/isv/wecom-isv-billing) | Pricing strategy · merchant ID · payment orders |
+| [wecom-isv-jssdk](/en/skills/isv/wecom-isv-jssdk) | ISV signing · multi-tenant ticket · OAuth differences |
+| [wecom-isv-provider](/en/skills/isv/wecom-isv-provider) | Login auth · ID conversion · enterprise registration promotion |
+| [wecom-isv-appendix](/en/skills/isv/wecom-isv-appendix) | Error code summary · rate limits · compatibility matrix |
 
 ---
 
-## 相关资源
+## Third-Party App Development
 
-- [SKILL 架构规范](/docs/guides/architecture) — 了解 SKILL 的内部结构
-- [贡献指南](https://github.com/OmniSocKit/Open-Wecom-Skills/blob/main/CONTRIBUTING.md) — Fork → 新增 / 修改 SKILL → 提交 PR
+Distributed via marketplace, credential system reuses ISV SKILLs.
+
+| Skill | Use Cases |
+|-------|-----------|
+| [wecom-3rd-quickstart](/en/skills/third-party/wecom-3rd-quickstart) | Register → Authorize → Publish → Promote full workflow |
+| [wecom-3rd-idconvert](/en/skills/third-party/wecom-3rd-idconvert) | corpid / userid / external_userid encryption & conversion |
+| [wecom-3rd-data](/en/skills/third-party/wecom-3rd-data) | Acquisition widget · chat archive · AI model integration |
+
+---
+
+## Related Resources
+
+- [SKILL Architecture](/en/docs/guides/architecture) — Understand the internal structure of SKILLs
+- [Contribution Guide](https://github.com/OmniSocKit/Open-Wecom-Skills/blob/main/CONTRIBUTING.en.md) — Fork → Add/Modify SKILL → Submit PR

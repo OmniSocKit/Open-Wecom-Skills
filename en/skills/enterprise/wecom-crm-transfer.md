@@ -23,7 +23,7 @@ api_count: 6
 callback_count: 1
 ---
 
-# WeCom CRM · 客户分配与继承 SKILL
+# WeCom CRM · Customer Transfer & Inheritance SKILL
 
 > 覆盖企业微信「外部联系人 · 客户分配与继承」子域：在职继承（2 API）、离职继承（2 API）、客户群继承（2 API），以及接替失败回调事件。
 > 依赖 `wecom-core` SKILL 提供的 WeComClient 基础客户端。
@@ -106,9 +106,9 @@ callback_count: 1
 
 **POST** `/cgi-bin/externalcontact/transfer_customer?access_token=ACCESS_TOKEN`
 
-#### 请求参数
+#### Request Parameters
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | `handover_userid` | string | 是 | 原跟进成员的 userid |
 | `takeover_userid` | string | 是 | 接替成员的 userid |
@@ -129,7 +129,7 @@ callback_count: 1
 }
 ```
 
-#### 响应参数
+#### Response Parameters
 
 | 参数 | 类型 | 说明 |
 |------|------|------|
@@ -152,15 +152,15 @@ callback_count: 1
 
 **POST** `/cgi-bin/externalcontact/transfer_result?access_token=ACCESS_TOKEN`
 
-#### 请求参数
+#### Request Parameters
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | `handover_userid` | string | 是 | 原跟进成员 userid |
 | `takeover_userid` | string | 是 | 接替成员 userid |
 | `cursor` | string | 否 | 分页游标 |
 
-#### 响应参数
+#### Response Parameters
 
 | 参数 | 类型 | 说明 |
 |------|------|------|
@@ -176,9 +176,9 @@ callback_count: 1
 
 **POST** `/cgi-bin/externalcontact/resigned/transfer_customer?access_token=ACCESS_TOKEN`
 
-#### 请求参数
+#### Request Parameters
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | `handover_userid` | string | 是 | 原跟进成员的 userid（**必须已离职**） |
 | `takeover_userid` | string | 是 | 接替成员的 userid |
@@ -212,14 +212,14 @@ callback_count: 1
 
 **POST** `/cgi-bin/externalcontact/groupchat/onjob_transfer?access_token=ACCESS_TOKEN`
 
-#### 请求参数
+#### Request Parameters
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | `chat_id_list` | string[] | 是 | 客户群 ID 列表，每次最多 **100** 个 |
 | `new_owner` | string | 是 | 新群主的 userid |
 
-#### 响应参数
+#### Response Parameters
 
 | 参数 | 类型 | 说明 |
 |------|------|------|

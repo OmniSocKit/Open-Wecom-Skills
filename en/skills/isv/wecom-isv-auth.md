@@ -31,7 +31,7 @@ triggers:
   - 服务商授权流程
 ---
 
-# WeCom ISV · 授权流程 SKILL (wecom-isv-auth)
+# WeCom ISV · Auth Flow SKILL (wecom-isv-auth)
 
 > 覆盖企业微信服务商代开发「授权流程」全生命周期：预授权码获取、授权链接拼接、临时授权码换永久码、授权信息查询、带参授权链接、权限详情查询，以及 3 种授权事件回调（create_auth / change_auth / cancel_auth）。
 > 依赖 `wecom-isv-core` SKILL 提供的 WeComISVClient 基础客户端和三级凭证体系。
@@ -167,13 +167,13 @@ https://open.work.weixin.qq.com/3rdapp/install?suite_id=SUITE_ID&pre_auth_code=P
 
 **请求参数:**
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | suite_access_token | string | 是 | URL query 参数 |
 
 **返回字段:**
 
-| 字段 | 类型 | 说明 |
+| Field | Type | Description |
 |------|------|------|
 | errcode | int | 返回码 |
 | errmsg | string | 返回信息 |
@@ -204,7 +204,7 @@ https://open.work.weixin.qq.com/3rdapp/install?suite_id=SUITE_ID&pre_auth_code=P
 
 **请求参数 (JSON Body):**
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | pre_auth_code | string | 是 | 预授权码 |
 | session_info | object | 是 | 授权配置 |
@@ -239,13 +239,13 @@ https://open.work.weixin.qq.com/3rdapp/install?suite_id=SUITE_ID&pre_auth_code=P
 
 **请求参数 (JSON Body):**
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | auth_code | string | 是 | 临时授权码（一次有效） |
 
 **返回字段:**
 
-| 字段 | 类型 | 说明 |
+| Field | Type | Description |
 |------|------|------|
 | access_token | string | 企业 access_token（可直接使用） |
 | expires_in | int | access_token 有效期 |
@@ -339,7 +339,7 @@ https://open.work.weixin.qq.com/3rdapp/install?suite_id=SUITE_ID&pre_auth_code=P
 
 **请求参数 (JSON Body):**
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | auth_corpid | string | 是 | 授权企业的 corpid |
 | permanent_code | string | 是 | 企业永久授权码 |
@@ -357,7 +357,7 @@ https://open.work.weixin.qq.com/3rdapp/install?suite_id=SUITE_ID&pre_auth_code=P
 
 返回结构与 A3 类似，但不包含 `access_token` 和 `permanent_code`，主要包含：
 
-| 字段 | 类型 | 说明 |
+| Field | Type | Description |
 |------|------|------|
 | auth_corp_info | object | 企业信息（同 A3） |
 | auth_info | object | 授权应用信息（含 agent 列表和 privilege） |
@@ -409,7 +409,7 @@ https://open.work.weixin.qq.com/3rdapp/install?suite_id=SUITE_ID&pre_auth_code=P
 
 **请求参数 (JSON Body):**
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | state | string | 否 | 自定义参数，原样回传 |
 | templateid_list | string[] | 是 | 代开发模版 ID 列表 |
@@ -425,7 +425,7 @@ https://open.work.weixin.qq.com/3rdapp/install?suite_id=SUITE_ID&pre_auth_code=P
 
 **返回字段:**
 
-| 字段 | 类型 | 说明 |
+| Field | Type | Description |
 |------|------|------|
 | errcode | int | 返回码 |
 | errmsg | string | 返回信息 |
@@ -456,7 +456,7 @@ https://open.work.weixin.qq.com/3rdapp/install?suite_id=SUITE_ID&pre_auth_code=P
 
 **请求参数 (JSON Body):**
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | auth_corpid | string | 是 | 授权企业的 corpid |
 | permanent_code | string | 是 | 企业永久授权码 |
@@ -472,7 +472,7 @@ https://open.work.weixin.qq.com/3rdapp/install?suite_id=SUITE_ID&pre_auth_code=P
 
 **返回字段:**
 
-| 字段 | 类型 | 说明 |
+| Field | Type | Description |
 |------|------|------|
 | errcode | int | 返回码 |
 | errmsg | string | 返回信息 |

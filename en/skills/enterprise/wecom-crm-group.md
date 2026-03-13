@@ -21,7 +21,7 @@ api_count: 3
 callback_count: 1
 ---
 
-# WeCom CRM · 客户群管理 SKILL
+# WeCom CRM · Customer Group Management SKILL
 
 > 覆盖企业微信「外部联系人 · 客户群管理」子域：客户群列表/详情查询、opengid→chat_id 转换、客户群变更回调事件。
 > 依赖 `wecom-core` SKILL 提供的 WeComClient 基础客户端。
@@ -116,9 +116,9 @@ callback_count: 1
 
 **POST** `/cgi-bin/externalcontact/groupchat/list?access_token=ACCESS_TOKEN`
 
-#### 请求参数
+#### Request Parameters
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | `status_filter` | int | 否 | 群跟进状态过滤。0=所有(默认) 1=离职待继承 2=继承中 3=继承完成 |
 | `owner_filter` | object | 否 | 群主过滤 |
@@ -139,7 +139,7 @@ callback_count: 1
 }
 ```
 
-#### 响应参数
+#### Response Parameters
 
 | 参数 | 类型 | 说明 |
 |------|------|------|
@@ -160,9 +160,9 @@ callback_count: 1
 
 **POST** `/cgi-bin/externalcontact/groupchat/get?access_token=ACCESS_TOKEN`
 
-#### 请求参数
+#### Request Parameters
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | `chat_id` | string | 是 | 客户群 ID |
 | `need_name` | int | 否 | 是否返回群成员名字。0=不返回(默认) **1=返回** |
@@ -176,7 +176,7 @@ callback_count: 1
 }
 ```
 
-#### 响应参数 — group_chat 对象
+#### Response Parameters — group_chat 对象
 
 | 参数 | 类型 | 说明 |
 |------|------|------|
@@ -203,7 +203,7 @@ callback_count: 1
 | `unionid` | string | 微信 unionid（仅 type=2 且已绑定开放平台时返回） |
 | `state` | string | 入群方式配置的 state（仅 join_scene=3 且已配置时返回） |
 
-#### 响应示例
+#### Response示例
 
 ```json
 {
@@ -257,13 +257,13 @@ callback_count: 1
 
 **POST** `/cgi-bin/externalcontact/opengid_to_chatid?access_token=ACCESS_TOKEN`
 
-#### 请求参数
+#### Request Parameters
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | `opengid` | string | 是 | 小程序通过 `wx.getGroupEnterInfo` 获取的群 ID |
 
-#### 响应参数
+#### Response Parameters
 
 | 参数 | 类型 | 说明 |
 |------|------|------|

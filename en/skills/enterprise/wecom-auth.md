@@ -261,7 +261,7 @@ GET https://qyapi.weixin.qq.com/cgi-bin/auth/getuserinfo?access_token=ACCESS_TOK
 
 **返回字段**：
 
-| 字段 | 类型 | 说明 |
+| Field | Type | Description |
 |------|------|------|
 | userid | string | 企业成员 UserID（成员时返回） |
 | openid | string | 非企业成员标识，≤64 字节（非成员时返回） |
@@ -328,7 +328,7 @@ POST https://qyapi.weixin.qq.com/cgi-bin/auth/getuserdetail?access_token=ACCESS_
 
 **敏感字段列表**（需管理员在应用详情中勾选，且成员授权后才返回）：
 
-| 字段 | 类型 | 说明 |
+| Field | Type | Description |
 |------|------|------|
 | userid | string | 成员 UserID |
 | gender | string | 性别：0=未定义, 1=男, 2=女 |
@@ -379,7 +379,7 @@ POST https://qyapi.weixin.qq.com/cgi-bin/service/get_provider_token
 }
 ```
 
-| 字段 | 类型 | 说明 |
+| Field | Type | Description |
 |------|------|------|
 | provider_access_token | string | 服务商凭证 |
 | expires_in | int | 有效期（秒），通常 7200 |
@@ -431,7 +431,7 @@ POST https://qyapi.weixin.qq.com/cgi-bin/service/get_login_info?access_token=PRO
 
 **返回字段**：
 
-| 字段 | 类型 | 说明 |
+| Field | Type | Description |
 |------|------|------|
 | usertype | int | 1=创建者, 2=内部管理员, 3=外部管理员, 4=普通成员, 5=未注册成员 |
 | user_info.userid | string | 用户 UserID |

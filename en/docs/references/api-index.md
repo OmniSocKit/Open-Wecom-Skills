@@ -1,13 +1,13 @@
-# 企业微信 API 模块索引
+# WeCom API Module Index
 
-> 本索引列出企业微信开放平台全部模块与对应 SKILL 的映射关系。
-> 开发者可根据需求快速定位对应的 SKILL 文件。
+> This index lists all WeCom Open Platform modules and their corresponding SKILL mappings.
+> Developers can quickly locate the relevant SKILL file based on their needs.
 
 ---
 
-## 模块 → SKILL 映射表
+## Module → SKILL Mapping
 
-| 官方模块 | 对应 SKILL | 域 |
+| Official Module | Corresponding SKILL | Domain |
 |---------|-----------|-----|
 | 获取 access_token | `wecom-core` | 基础 |
 | 回调配置 | `wecom-core` | 基础 |
@@ -61,9 +61,9 @@
 
 ---
 
-## 需求 → SKILL 快速查找
+## Requirement → SKILL Quick Lookup
 
-| 需求关键词 | 推荐 SKILL |
+| Keyword | Recommended SKILL |
 |-----------|-----------|
 | 成员、部门、标签、通讯录 | `wecom-contact` |
 | 发消息、群聊、机器人、webhook | `wecom-message` |
@@ -92,11 +92,11 @@
 
 ---
 
-## 服务商代开发 (ISV) 模块 → SKILL 映射表
+## ISV Module → SKILL Mapping
 
 > 路径：`skills/isv/`
 
-| 官方模块 | 对应 SKILL |
+| Official Module | Corresponding SKILL |
 |---------|-----------|
 | 凭证管理（suite_access_token） | `wecom-isv-core` |
 | 授权流程（预授权码/永久授权码） | `wecom-isv-auth` |
@@ -109,11 +109,11 @@
 
 ---
 
-## 第三方应用开发模块 → SKILL 映射表
+## Third-Party App Module → SKILL Mapping
 
 > 路径：`skills/third-party/`
 
-| 官方模块 | 对应 SKILL |
+| Official Module | Corresponding SKILL |
 |---------|-----------|
 | 快速入门（注册/授权/上架） | `wecom-3rd-quickstart` |
 | ID 转换（corpid/userid 加密互转） | `wecom-3rd-idconvert` |
@@ -123,9 +123,9 @@
 
 ---
 
-## 需求 → SKILL 快速查找
+## Requirement → SKILL Quick Lookup
 
-| 需求关键词 | 推荐 SKILL |
+| Keyword | Recommended SKILL |
 |-----------|-----------|\n| 成员、部门、标签、通讯录 | `wecom-contact` |
 | 发消息、群聊、机器人、webhook | `wecom-message` |
 | 应用配置、菜单、工作台 | `wecom-app` |
@@ -157,9 +157,9 @@
 
 ---
 
-## 附录文档
+## Appendix Documents
 
-| 文档 | 路径 | 说明 |
+| Document | Path | Description |
 |------|------|------|
 | 快速入门 | `docs/guides/quickstart.md` | 5 步完成自建应用创建到首次 API 调用 |
 | 全局错误码 | `docs/references/error-codes.md` | 300+ 条 errcode 完整速查表 |

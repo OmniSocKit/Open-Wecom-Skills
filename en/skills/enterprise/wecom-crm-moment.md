@@ -23,7 +23,7 @@ api_count: 8
 callback_count: 0
 ---
 
-# WeCom CRM · 客户朋友圈 SKILL
+# WeCom CRM · Customer Moments SKILL
 
 > 覆盖企业微信「外部联系人 · 客户朋友圈」子域：创建发表任务（异步）、查询发表列表/执行状态/可见范围/送达结果/互动数据、停止任务。
 > 依赖 `wecom-core` SKILL 提供的 WeComClient 基础客户端。
@@ -133,9 +133,9 @@ callback_count: 0
 
 **POST** `/cgi-bin/externalcontact/add_moment_task?access_token=ACCESS_TOKEN`
 
-#### 请求参数
+#### Request Parameters
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | `text` | object | 否 | 文本内容 |
 | `text.content` | string | 否 | 文本内容，最多 **2000** 字符 |
@@ -153,13 +153,13 @@ callback_count: 0
 
 > `text` 和 `attachments` 不能同时为空（errcode 41089）。
 
-#### 响应参数
+#### Response Parameters
 
 | 参数 | 类型 | 说明 |
 |------|------|------|
 | `jobid` | string | 异步任务 ID，**24 小时有效** |
 
-#### 频率限制
+#### Rate Limit
 
 - 企业每月通过 API 创建朋友圈：**10 万次**
 - 每分钟创建频率：**10 条/分钟**
@@ -170,7 +170,7 @@ callback_count: 0
 
 **GET** `/cgi-bin/externalcontact/get_moment_task_result?access_token=ACCESS_TOKEN&jobid=JOBID`
 
-#### 响应参数
+#### Response Parameters
 
 | 参数 | 类型 | 说明 |
 |------|------|------|
@@ -189,9 +189,9 @@ callback_count: 0
 
 **POST** `/cgi-bin/externalcontact/get_moment_list?access_token=ACCESS_TOKEN`
 
-#### 请求参数
+#### Request Parameters
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | `start_time` | int | 是 | 开始时间戳 |
 | `end_time` | int | 是 | 结束时间戳（与 start_time 间隔≤**30 天**） |
@@ -200,7 +200,7 @@ callback_count: 0
 | `cursor` | string | 否 | 分页游标 |
 | `limit` | int | 否 | 每页大小，默认 50，最大 **100** |
 
-#### 响应 — moment_list[] 字段
+#### Response — moment_list[] 字段
 
 | 参数 | 类型 | 说明 |
 |------|------|------|
@@ -252,7 +252,7 @@ callback_count: 0
 
 请求：`{moment_id, userid}`
 
-#### 响应参数
+#### Response Parameters
 
 | 参数 | 类型 | 说明 |
 |------|------|------|

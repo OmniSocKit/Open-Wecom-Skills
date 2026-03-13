@@ -29,7 +29,7 @@ triggers:
   - 代开发应用付费
 ---
 
-# WeCom ISV · 收银台/应用收费 SKILL (wecom-isv-billing)
+# WeCom ISV · Billing SKILL (wecom-isv-billing)
 
 > 覆盖企业微信服务商代开发「收银台」全流程：商户号开通、定价策略配置、收款订单创建/查询/列表、到期拦截配置，以及支付成功/退款回调处理。
 > 依赖 `wecom-isv-core` SKILL 提供的 WeComISVClient 基础客户端和三级凭证体系。
@@ -180,7 +180,7 @@ provider_access_token（服务商凭证）
 
 **请求参数** (JSON Body):
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | corpid | string | 是 | 授权企业的 corpid |
 | buyer_userid | string | 是 | 企业中下单人的 userid（通常为管理员） |
@@ -212,7 +212,7 @@ provider_access_token（服务商凭证）
 
 **返回字段:**
 
-| 字段 | 类型 | 说明 |
+| Field | Type | Description |
 |------|------|------|
 | errcode | int | 返回码 |
 | errmsg | string | 返回信息 |
@@ -235,7 +235,7 @@ provider_access_token（服务商凭证）
 
 **请求参数** (JSON Body):
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | order_id | string | 是 | 订单 ID |
 
@@ -269,7 +269,7 @@ provider_access_token（服务商凭证）
 
 **返回字段:**
 
-| 字段 | 类型 | 说明 |
+| Field | Type | Description |
 |------|------|------|
 | order.order_id | string | 订单 ID |
 | order.order_status | int | 订单状态（见 2.4 状态表） |
@@ -295,7 +295,7 @@ provider_access_token（服务商凭证）
 
 **请求参数** (JSON Body):
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | corpid | string | 否 | 按企业筛选（不传则查询所有企业） |
 | start_time | int | 否 | 起始时间（Unix 秒） |
@@ -341,7 +341,7 @@ provider_access_token（服务商凭证）
 
 **返回字段:**
 
-| 字段 | 类型 | 说明 |
+| Field | Type | Description |
 |------|------|------|
 | order_list | object[] | 订单列表（每个元素结构同 B2 的 order） |
 | next_cursor | string | 分页游标，has_more=1 时使用 |

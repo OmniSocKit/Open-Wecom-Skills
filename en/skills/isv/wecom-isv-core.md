@@ -21,7 +21,7 @@ triggers:
   - 应用代开发
 ---
 
-# 企业微信服务商代开发基座 (wecom-isv-core)
+# WeCom ISV Core Foundation (wecom-isv-core)
 
 你现在是企业微信**服务商代开发**领域的专家。基于本 SKILL 的知识，帮助开发者快速、正确地完成代开发应用的开发与对接。
 

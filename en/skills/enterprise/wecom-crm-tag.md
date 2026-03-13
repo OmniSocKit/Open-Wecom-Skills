@@ -23,7 +23,7 @@ api_count: 9
 callback_count: 1
 ---
 
-# WeCom CRM · 客户标签管理 SKILL
+# WeCom CRM · Customer Tag Management SKILL
 
 > 覆盖企业微信「外部联系人 · 客户标签管理」子域：企业标签 CRUD（4 API）、客户打标签（1 API）、策略标签 CRUD（4 API），以及标签变更回调事件。
 > 依赖 `wecom-core` SKILL 提供的 WeComClient 基础客户端。
@@ -135,7 +135,7 @@ callback_count: 1
 
 **请求参数:**
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | tag_id | string[] | 否 | 要查询的标签 ID 列表 |
 | group_id | string[] | 否 | 要查询的标签组 ID 列表 |
@@ -146,7 +146,7 @@ callback_count: 1
 
 **返回字段:**
 
-| 字段 | 类型 | 说明 |
+| Field | Type | Description |
 |------|------|------|
 | errcode | int | 返回码 |
 | errmsg | string | 返回信息 |
@@ -154,7 +154,7 @@ callback_count: 1
 
 **tag_group 结构:**
 
-| 字段 | 类型 | 说明 |
+| Field | Type | Description |
 |------|------|------|
 | group_id | string | 标签组 ID |
 | group_name | string | 标签组名称 |
@@ -165,7 +165,7 @@ callback_count: 1
 
 **tag_group.tag 结构:**
 
-| 字段 | 类型 | 说明 |
+| Field | Type | Description |
 |------|------|------|
 | id | string | 标签 ID |
 | name | string | 标签名称 |
@@ -203,7 +203,7 @@ callback_count: 1
 
 **请求参数:**
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | group_id | string | 否 | 向已有标签组添加标签时填写 |
 | group_name | string | 否 | 创建新标签组时填写；若同名组已存在则加入该组 |
@@ -241,7 +241,7 @@ callback_count: 1
 
 **请求参数:**
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | id | string | 是 | 标签或标签组的 ID |
 | name | string | 否 | 新名称，最长 **30 个字符** |
@@ -262,7 +262,7 @@ callback_count: 1
 
 **请求参数:**
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | tag_id | string[] | 否 | 要删除的标签 ID 列表 |
 | group_id | string[] | 否 | 要删除的标签组 ID 列表 |
@@ -283,7 +283,7 @@ callback_count: 1
 
 **请求参数:**
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | userid | string | 是 | 企业成员 userid |
 | external_userid | string | 是 | 外部联系人 userid（必须是 userid 的客户） |
@@ -319,7 +319,7 @@ callback_count: 1
 
 **请求参数:**
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | strategy_id | int | 是 | 规则组 ID |
 | tag_id | string[] | 否 | 标签 ID 列表 |
@@ -339,7 +339,7 @@ callback_count: 1
 
 **请求参数:**
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | strategy_id | int | 是 | 规则组 ID |
 | group_id | string | 否 | 向已有标签组添加标签时填写 |
@@ -366,7 +366,7 @@ callback_count: 1
 
 **请求参数:**
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | id | string | 是 | 标签或标签组 ID |
 | name | string | 否 | 新名称 |
@@ -388,7 +388,7 @@ callback_count: 1
 
 **请求参数:**
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | tag_id | string[] | 否 | 标签 ID 列表 |
 | group_id | string[] | 否 | 标签组 ID 列表 |
@@ -441,7 +441,7 @@ callback_count: 1
 
 **回调字段:**
 
-| 字段 | 类型 | 说明 |
+| Field | Type | Description |
 |------|------|------|
 | Event / InfoType | string | `change_external_tag` |
 | Id | string | 标签或标签组 ID |

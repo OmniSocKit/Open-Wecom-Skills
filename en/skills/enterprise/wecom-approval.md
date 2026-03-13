@@ -25,7 +25,7 @@ api_count: 8
 callback_count: 2
 ---
 
-# WeCom OA · 审批 SKILL
+# WeCom OA · Approval SKILL
 
 > 覆盖企业微信「OA 审批」全域：审批模板 CRUD、提交审批申请、批量获取审批单号、获取审批详情、复制/推广模板、自建应用审批引擎查询，以及 2 种审批状态变更回调事件。
 > 依赖 `wecom-core` SKILL 提供的 WeComClient 基础客户端。
@@ -309,7 +309,7 @@ POST oa/getapprovaldetail
 
 **响应核心字段 (info)**
 
-| 字段 | 类型 | 说明 |
+| Field | Type | Description |
 |------|------|------|
 | sp_no | string | 审批单号 |
 | sp_name | string | 审批模板名称 |

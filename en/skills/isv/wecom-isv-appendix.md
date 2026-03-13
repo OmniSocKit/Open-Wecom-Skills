@@ -21,7 +21,7 @@ triggers:
   - 代开发迁移
 ---
 
-# 企业微信服务商代开发附录 (wecom-isv-appendix)
+# WeCom ISV Appendix (wecom-isv-appendix)
 
 你现在是企业微信**服务商代开发**领域的参考手册专家。基于本 SKILL 的知识，帮助开发者快速排查问题、理解限制、规划迁移。
 

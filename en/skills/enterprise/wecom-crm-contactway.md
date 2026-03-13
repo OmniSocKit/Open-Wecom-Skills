@@ -24,7 +24,7 @@ api_count: 10
 callback_count: 0
 ---
 
-# WeCom CRM · 联系我与加入群聊管理 SKILL
+# WeCom CRM · Contact Me & Group Join SKILL
 
 > 覆盖企业微信「外部联系人 · 客户联系」子域：「联系我」CRUD（6 个 API）+ 「加入群聊」CRUD（4 个 API）。
 > 包括渠道活码、临时会话、结束语、群二维码自动建群等完整功能。
@@ -133,9 +133,9 @@ API 创建的「联系我」和「加入群聊」**不会在管理后台展示**
 
 **POST** `/cgi-bin/externalcontact/add_contact_way?access_token=ACCESS_TOKEN`
 
-#### 请求参数
+#### Request Parameters
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | `type` | int | 是 | 联系方式类型：1=单人 2=多人 |
 | `scene` | int | 是 | 场景：1=小程序 2=二维码 |
@@ -152,7 +152,7 @@ API 创建的「联系我」和「加入群聊」**不会在管理后台展示**
 | `is_exclusive` | bool | 否 | 同一外部企业客户是否只能添加一个成员（**仅自建应用**） |
 | `conclusions` | object | 否 | 结束语，仅 is_temp=true 有效 |
 
-#### 响应参数
+#### Response Parameters
 
 | 参数 | 类型 | 说明 |
 |------|------|------|
@@ -165,13 +165,13 @@ API 创建的「联系我」和「加入群聊」**不会在管理后台展示**
 
 **POST** `/cgi-bin/externalcontact/get_contact_way?access_token=ACCESS_TOKEN`
 
-#### 请求参数
+#### Request Parameters
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | `config_id` | string | 是 | 联系方式配置 ID |
 
-#### 响应
+#### Response
 
 返回 `contact_way` 对象，包含创建时的所有字段 + `qr_code`（scene=2 时）。get 时 image 结构额外返回 `pic_url` 字段。
 
@@ -181,9 +181,9 @@ API 创建的「联系我」和「加入群聊」**不会在管理后台展示**
 
 **POST** `/cgi-bin/externalcontact/list_contact_way?access_token=ACCESS_TOKEN`
 
-#### 请求参数
+#### Request Parameters
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | `start_time` | int | 否 | 创建起始时间戳 |
 | `end_time` | int | 否 | 创建结束时间戳 |
@@ -192,7 +192,7 @@ API 创建的「联系我」和「加入群聊」**不会在管理后台展示**
 | `userid` | string | 否 | 按成员 userid 过滤 |
 | `skip_verify` | bool | 否 | 按是否跳过验证过滤 |
 
-#### 响应参数
+#### Response Parameters
 
 | 参数 | 类型 | 说明 |
 |------|------|------|
@@ -211,9 +211,9 @@ API 创建的「联系我」和「加入群聊」**不会在管理后台展示**
 
 **POST** `/cgi-bin/externalcontact/update_contact_way?access_token=ACCESS_TOKEN`
 
-#### 请求参数
+#### Request Parameters
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | `config_id` | string | 是 | 联系方式配置 ID |
 | `remark` | string | 否 | 备注 |
@@ -243,9 +243,9 @@ API 创建的「联系我」和「加入群聊」**不会在管理后台展示**
 
 **POST** `/cgi-bin/externalcontact/close_temp_chat?access_token=ACCESS_TOKEN`
 
-#### 请求参数
+#### Request Parameters
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | `userid` | string | 是 | 企业成员 userid |
 | `external_userid` | string | 是 | 客户 external_userid |
@@ -258,9 +258,9 @@ API 创建的「联系我」和「加入群聊」**不会在管理后台展示**
 
 **POST** `/cgi-bin/externalcontact/groupchat/add_join_way?access_token=ACCESS_TOKEN`
 
-#### 请求参数
+#### Request Parameters
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | `scene` | int | 是 | 1=群小程序插件 2=群二维码插件 |
 | `remark` | string | 否 | 备注，最多 30 字符 |
@@ -271,7 +271,7 @@ API 创建的「联系我」和「加入群聊」**不会在管理后台展示**
 | `state` | string | 否 | 渠道参数，最多 30 UTF-8 字符 |
 | `mark_source` | bool | 否 | 是否标记来源（需企业开通相关功能） |
 
-#### 响应
+#### Response
 
 | 参数 | 类型 | 说明 |
 |------|------|------|

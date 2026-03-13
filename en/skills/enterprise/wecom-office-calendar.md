@@ -133,7 +133,7 @@ POST /cgi-bin/oa/calendar/add?access_token=ACCESS_TOKEN
 | calendar.organizer | 是 | string | 组织者 userid |
 | calendar.summary | 是 | string | 日历名称 |
 | calendar.color | 否 | string | 日历颜色（如 "#FF0000"） |
-| calendar.description | 否 | string | 描述 |
+| calendar.description | 否 | string | Description |
 | calendar.shares | 否 | array | 共享成员 [{userid, readonly}] |
 | agentid | 是 | int | 应用 ID |
 

@@ -21,7 +21,7 @@ api_count: 6
 callback_count: 6
 ---
 
-# WeCom CRM · 客户管理 SKILL
+# WeCom CRM · Customer Management SKILL
 
 > 覆盖企业微信「外部联系人 · 客户管理」子域：客户列表/详情/批量查询、备注修改、服务人员列表、unionid 转换，以及 6 种客户变更回调事件。
 > 依赖 `wecom-core` SKILL 提供的 WeComClient 基础客户端。
@@ -128,14 +128,14 @@ callback_count: 6
 
 **请求参数:**
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | access_token | string | 是 | 调用接口凭证（URL 参数） |
 | userid | string | 是 | 企业成员的 userid |
 
 **返回字段:**
 
-| 字段 | 类型 | 说明 |
+| Field | Type | Description |
 |------|------|------|
 | errcode | int | 返回码 |
 | errmsg | string | 返回信息 |
@@ -167,7 +167,7 @@ callback_count: 6
 
 **请求参数:**
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | access_token | string | 是 | URL 参数 |
 | external_userid | string | 是 | 外部联系人 userid |
@@ -175,7 +175,7 @@ callback_count: 6
 
 **返回字段:**
 
-| 字段 | 类型 | 说明 |
+| Field | Type | Description |
 |------|------|------|
 | external_contact | object | 外部联系人信息 |
 | external_contact.external_userid | string | 外部联系人 ID |
@@ -191,7 +191,7 @@ callback_count: 6
 | follow_user | object[] | 跟进人列表 |
 | follow_user[].userid | string | 成员 userid |
 | follow_user[].remark | string | 备注名 |
-| follow_user[].description | string | 描述 |
+| follow_user[].description | string | Description |
 | follow_user[].createtime | int | 添加时间(Unix 秒) |
 | follow_user[].tags | object[] | 标签列表(含 group_name/tag_name/tag_id/type) |
 | follow_user[].remark_corp_name | string | 备注企业名 |
@@ -215,7 +215,7 @@ callback_count: 6
 
 **请求参数:**
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | userid_list | string[] | 是 | 成员 userid 列表，最多 **100 个** |
 | cursor | string | 否 | 分页游标 |
@@ -233,14 +233,14 @@ callback_count: 6
 
 **返回字段:**
 
-| 字段 | 类型 | 说明 |
+| Field | Type | Description |
 |------|------|------|
 | external_contact_list | object[] | 客户详情列表 |
 | external_contact_list[].external_contact | object | 外部联系人信息（同 C2） |
 | external_contact_list[].follow_info | object | 跟进人信息（**注意字段名不同**） |
 | follow_info.userid | string | 成员 userid |
 | follow_info.remark | string | 备注名 |
-| follow_info.description | string | 描述 |
+| follow_info.description | string | Description |
 | follow_info.createtime | int | 添加时间 |
 | follow_info.tag_id | string[] | 标签 ID 列表（**仅 ID，无 group_name/tag_name**） |
 | follow_info.remark_corp_name | string | 备注企业名 |
@@ -261,7 +261,7 @@ callback_count: 6
 
 **请求参数:**
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | userid | string | 是 | 企业成员 userid |
 | external_userid | string | 是 | 外部联系人 userid |
@@ -304,7 +304,7 @@ callback_count: 6
 
 **返回字段:**
 
-| 字段 | 类型 | 说明 |
+| Field | Type | Description |
 |------|------|------|
 | errcode | int | 返回码 |
 | errmsg | string | 返回信息 |
@@ -335,7 +335,7 @@ callback_count: 6
 
 **请求参数:**
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | unionid | string | 是 | 微信客户 unionid |
 | openid | string | 是 | 微信客户 openid |
@@ -353,7 +353,7 @@ callback_count: 6
 
 **返回字段:**
 
-| 字段 | 类型 | 说明 |
+| Field | Type | Description |
 |------|------|------|
 | external_userid | string | 外部联系人 ID（已是客户时返回） |
 | pending_id | string | 临时 ID（以下两种情况返回，升级版 URL）：① 微信用户尚未成为企业客户；② 客户的跟进人或所在群主不在应用可见范围 |

@@ -6,7 +6,7 @@ description: |
   依赖 wecom-core 基座 SKILL。
 ---
 
-# 企业微信 - 消息管理 (wecom-message)
+# WeCom Message Management (wecom-message)
 
 你现在是企业微信消息管理专家。基于本 SKILL 的知识，帮助开发者正确地发送、接收和管理企业微信消息。
 
@@ -26,7 +26,7 @@ description: |
 | 第三方应用 | 授权范围内 | 需配置回调URL | 不支持 | 使用 suite_access_token |
 | 企业关联小程序 | 可见范围内 | 不支持 | 不支持 | 2021年2月4日起支持发送 |
 
-### 频率限制（关键）
+### Rate Limits（关键）
 
 | 维度 | 限制 | 说明 |
 |------|------|------|
@@ -67,7 +67,7 @@ description: |
 
 ### 3.1 发送应用消息
 
-| 操作 | 方法 | 端点路径 | 关键参数 | 幂等 |
+| Operation | Method | Endpoint | Key Parameters | Idempotent |
 |------|------|----------|----------|------|
 | 发送应用消息 | POST | /message/send | touser/toparty/totag, msgtype, agentid | 否 |
 | 撤回应用消息 | POST | /message/recall | msgid(必填) | 是 |
@@ -84,7 +84,7 @@ description: |
 
 ### 3.3 群聊管理
 
-| 操作 | 方法 | 端点路径 | 关键参数 | 幂等 |
+| Operation | Method | Endpoint | Key Parameters | Idempotent |
 |------|------|----------|----------|------|
 | 创建群聊 | POST | /appchat/create | userlist(必填, 2~2000人) | 否 |
 | 修改群聊 | POST | /appchat/update | chatid(必填) | 是 |
@@ -93,7 +93,7 @@ description: |
 
 ### 3.4 群机器人 (Webhook)
 
-| 操作 | 方法 | 端点路径 | 关键参数 | 幂等 |
+| Operation | Method | Endpoint | Key Parameters | Idempotent |
 |------|------|----------|----------|------|
 | 发送群机器人消息 | POST | Webhook URL | msgtype(必填) | 否 |
 | 上传群机器人文件 | POST | Webhook upload URL | media(file) | 否 |

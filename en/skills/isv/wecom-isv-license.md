@@ -30,7 +30,7 @@ triggers:
   - 服务商许可管理
 ---
 
-# WeCom ISV · 接口调用许可 SKILL (wecom-isv-license)
+# WeCom ISV · API License SKILL (wecom-isv-license)
 
 > 覆盖企业微信服务商代开发「接口调用许可」全生命周期：订单管理（购买/续期/查询）、帐号激活（单个/批量）、帐号继承、自动激活配置，以及 2 种回调事件（license_pay_success / license_refund）。
 > 依赖 `wecom-isv-core` SKILL 提供的基础客户端和凭证体系。

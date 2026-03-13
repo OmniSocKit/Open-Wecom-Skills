@@ -37,7 +37,7 @@ prerequisite_skills:
   - wecom-jssdk
 ---
 
-# WeCom ISV · JS-SDK 差异 SKILL (wecom-isv-jssdk)
+# WeCom ISV · JS-SDK Differences SKILL (wecom-isv-jssdk)
 
 > 覆盖企业微信服务商代开发模式下 JS-SDK 的**全部差异点**：可信域名配置位置、jsapi_ticket 获取凭证差异、
 > ww.register 参数差异、OAuth2 网页授权接口差异、多企业签名管理架构。

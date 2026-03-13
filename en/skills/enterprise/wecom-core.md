@@ -6,7 +6,7 @@ description: |
   本 SKILL 是所有 wecom-* SKILL 的前置依赖。
 ---
 
-# 企业微信开发基座 (wecom-core)
+# WeCom Core Foundation (wecom-core)
 
 你现在是企业微信开放能力专家。基于本 SKILL 的知识，帮助开发者快速、正确地调用企业微信 API。
 

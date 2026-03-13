@@ -1,25 +1,25 @@
-# 企业微信全局错误码 (Global Error Codes)
+# WeCom Global Error Codes
 
-> 来源：https://developer.work.weixin.qq.com/document/path/90313
-> 查询工具：https://developer.work.weixin.qq.com/devtool/query
+> Source: https://developer.work.weixin.qq.com/document/path/90313
+> Query Tool: https://developer.work.weixin.qq.com/devtool/query
 
-开发者程序应根据 `errcode` 判断错误，**不要依赖 errmsg 文本匹配**（errmsg 可能调整）。
-如果请求参数不符合 JSON 规范，errmsg 会包含 `"Warning: wrong json format."`。
+Developers should check `errcode` for error handling. **Do not rely on errmsg text matching** (errmsg may change).
+If request parameters do not conform to JSON spec, errmsg will contain `"Warning: wrong json format."`.
 
 ---
 
-## 通用错误码
+## General Error Codes
 
-| errcode | 说明 | 排查方向 |
+| errcode | Description | Troubleshooting |
 |---------|------|----------|
 | -1 | 系统繁忙 | 稍后重试（建议最多 3 次，间隔递增） |
 | 0 | 请求成功 | — |
 
 ---
 
-## 40xxx — 参数不合法
+## 40xxx — Invalid Parameters
 
-| errcode | 说明 | 排查方向 |
+| errcode | Description | Troubleshooting |
 |---------|------|----------|
 | 40001 | 不合法的 secret 参数 | 检查 corpsecret 是否正确、是否有首尾空格、应用是否启用 |
 | 40003 | 不合法的 UserID | 成员不存在或 userid 格式错误 |
@@ -71,9 +71,9 @@
 
 ---
 
-## 41xxx — 缺少参数
+## 41xxx — Missing Parameters
 
-| errcode | 说明 | 排查方向 |
+| errcode | Description | Troubleshooting |
 |---------|------|----------|
 | 41001 | 缺少 access_token 参数 | URL 中未携带 access_token |
 | 41002 | 缺少 corpid 参数 | 请求缺少 corpid |
@@ -91,9 +91,9 @@
 
 ---
 
-## 42xxx — 凭证过期
+## 42xxx — Credential Expired
 
-| errcode | 说明 | 排查方向 |
+| errcode | Description | Troubleshooting |
 |---------|------|----------|
 | 42001 | access_token 已过期 | 刷新 token（有效期 7200 秒） |
 | 42007 | pre_auth_code 已过期 | 重新获取预授权码 |
@@ -101,26 +101,26 @@
 
 ---
 
-## 43xxx — 权限被拒
+## 43xxx — Permission Denied
 
-| errcode | 说明 | 排查方向 |
+| errcode | Description | Troubleshooting |
 |---------|------|----------|
 | 43004 | 指定的 userid 未绑定微信或未关注微信插件 | 成员需先关注企业微信 |
 
 ---
 
-## 44xxx — 内容为空
+## 44xxx — Empty Content
 
-| errcode | 说明 | 排查方向 |
+| errcode | Description | Troubleshooting |
 |---------|------|----------|
 | 44001 | 多媒体文件为空 | 上传文件内容为空 |
 | 44004 | 文本消息 content 为空 | 发送文本消息时 content 不能为空 |
 
 ---
 
-## 45xxx — 超限
+## 45xxx — Rate Limit Exceeded
 
-| errcode | 说明 | 排查方向 |
+| errcode | Description | Troubleshooting |
 |---------|------|----------|
 | 45002 | 消息内容大小超过限制 | 文本消息不超过 2048 字节 |
 | 45004 | 应用描述大小超过限制 | 应用描述不超过 300 字符 |
@@ -135,18 +135,18 @@
 
 ---
 
-## 46xxx — 不存在
+## 46xxx — Not Found
 
-| errcode | 说明 | 排查方向 |
+| errcode | Description | Troubleshooting |
 |---------|------|----------|
 | 46003 | 菜单未设置 | 应用未配置自定义菜单 |
 | 46004 | 指定的 userid 未注册 | userid 不存在 |
 
 ---
 
-## 48xxx — 权限不足
+## 48xxx — Insufficient Permission
 
-| errcode | 说明 | 排查方向 |
+| errcode | Description | Troubleshooting |
 |---------|------|----------|
 | 48001 | API 功能未授权 | 应用未开通对应 API 权限 |
 | 48002 | API 接口无权限调用 | 检查应用可见范围和权限配置 |
@@ -158,9 +158,9 @@
 
 ---
 
-## 50xxx — 用户相关
+## 50xxx — User Related
 
-| errcode | 说明 | 排查方向 |
+| errcode | Description | Troubleshooting |
 |---------|------|----------|
 | 50001 | redirect_url 未登记可信域名 | 在管理后台配置可信域名 |
 | 50002 | 成员不在权限范围 | 成员不在应用可见范围或不在对应标签 |
@@ -168,9 +168,9 @@
 
 ---
 
-## 60xxx — 访问控制
+## 60xxx — Access Control
 
-| errcode | 说明 | 排查方向 |
+| errcode | Description | Troubleshooting |
 |---------|------|----------|
 | 60001 | 部门长度不合法 | 部门名称超长 |
 | 60003 | 部门 ID 不合法 | 部门 ID 格式错误 |
@@ -195,9 +195,9 @@
 
 ---
 
-## 72xxx — 发票相关
+## 72xxx — Invoice Related
 
-| errcode | 说明 | 排查方向 |
+| errcode | Description | Troubleshooting |
 |---------|------|----------|
 | 72023 | 发票已被其他公众号锁定 | 发票状态冲突 |
 | 72024 | 发票状态错误 | 发票当前状态不允许该操作 |
@@ -205,9 +205,9 @@
 
 ---
 
-## 80xxx — 应用管理
+## 80xxx — App Management
 
-| errcode | 说明 | 排查方向 |
+| errcode | Description | Troubleshooting |
 |---------|------|----------|
 | 80001 | 可信域名不正确 | 域名未通过所有权校验 |
 | 81001 | 部门下的结点数超过限制 | 调整通讯录结构 |
@@ -217,17 +217,17 @@
 
 ---
 
-## 82xxx — 群聊
+## 82xxx — Group Chat
 
-| errcode | 说明 | 排查方向 |
+| errcode | Description | Troubleshooting |
 |---------|------|----------|
 | 82001 | 指定的成员 / 部门 / 标签全部无效 | 检查群聊成员列表 |
 
 ---
 
-## 84xxx — OAuth / 登录
+## 84xxx — OAuth / Login
 
-| errcode | 说明 | 排查方向 |
+| errcode | Description | Troubleshooting |
 |---------|------|----------|
 | 84014 | 成员票据过期 | 重新获取 user_ticket（5分钟有效） |
 | 84015 | 成员票据无效 | user_ticket 格式错误 |
@@ -244,9 +244,9 @@
 
 ---
 
-## 85xxx — 域名 / 代开发
+## 85xxx — Domain / ISV
 
-| errcode | 说明 | 排查方向 |
+| errcode | Description | Troubleshooting |
 |---------|------|----------|
 | 85002 | 包含非法的外部联系人 ID | external_userid 不合法 |
 | 85004 | 每企业每小时仅允许调用一次 | JS-SDK 域名校验有频率限制 |
@@ -254,18 +254,18 @@
 
 ---
 
-## 86xxx — 聊天存档
+## 86xxx — Chat Archive
 
-| errcode | 说明 | 排查方向 |
+| errcode | Description | Troubleshooting |
 |---------|------|----------|
 | 86216 | 存在无效的 external_userid 列表 | 外部联系人 ID 格式错误 |
 | 86220 | 需要激活互通账号 | 成员需要互通账号许可 |
 
 ---
 
-## 90xxx — 客户联系
+## 90xxx — External Contact
 
-| errcode | 说明 | 排查方向 |
+| errcode | Description | Troubleshooting |
 |---------|------|----------|
 | 90207 | 无客户联系权限 | 应用未开通客户联系功能 |
 | 90208 | 不在配置的使用范围内 | 成员不在客户联系使用范围 |
@@ -273,25 +273,25 @@
 
 ---
 
-## 91xxx — 审批
+## 91xxx — Approval
 
-| errcode | 说明 | 排查方向 |
+| errcode | Description | Troubleshooting |
 |---------|------|----------|
 | 91040 | 不合法的审批模板 ID | 审批模板不存在 |
 
 ---
 
-## 92xxx — 客服
+## 92xxx — Customer Service
 
-| errcode | 说明 | 排查方向 |
+| errcode | Description | Troubleshooting |
 |---------|------|----------|
 | 92002 | 客服账号数或接待人员超限 | 联系管理员扩容 |
 
 ---
 
-## 301xxx — 权限操作
+## 301xxx — Permission Operations
 
-| errcode | 说明 | 排查方向 |
+| errcode | Description | Troubleshooting |
 |---------|------|----------|
 | 301002 | 无权限操作指定的应用 / 成员 | 成员不在应用可见范围内 |
 | 301005 | 不允许删除创建者 | 企业创建者不可删除 |
@@ -307,9 +307,9 @@
 
 ---
 
-## 610xxx — 客服专属
+## 610xxx — Customer Service Exclusive
 
-| errcode | 说明 | 排查方向 |
+| errcode | Description | Troubleshooting |
 |---------|------|----------|
 | 610001 | 客服开放接口未启用 | 管理后台开启客服 API |
 | 610003 | 客服 userid 不存在 | 客服成员 ID 无效 |
@@ -320,15 +320,15 @@
 
 ---
 
-## 670xxx — 许可相关
+## 670xxx — License Related
 
-| errcode | 说明 | 排查方向 |
+| errcode | Description | Troubleshooting |
 |---------|------|----------|
 | 670001 | 接口许可过期 | 续费企业微信接口许可 |
 
 ---
 
-## 排查方法
+## Troubleshooting Methods
 
 1. **错误码查询工具**: https://developer.work.weixin.qq.com/devtool/query
 2. **频率解封工具**: https://open.work.weixin.qq.com/devtool/checkCorpSpamBlock

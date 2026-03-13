@@ -23,7 +23,7 @@ api_count: 14
 callback_count: 2
 ---
 
-# WeCom · 会议 SKILL
+# WeCom · Meeting SKILL
 
 > 覆盖企业微信「会议」全域：预约会议 CRUD（基础版+高级版）、OA 会议室管理与预定、会议状态回调。
 > 附录含 Rooms 会议室、PSTN 电话入会、会议录制、网络研讨会等扩展子域 API 索引。
@@ -163,7 +163,7 @@ POST meeting/create
 
 **settings 子字段**
 
-| 字段 | 类型 | 说明 |
+| Field | Type | Description |
 |------|------|------|
 | password | string | 入会密码，4-6 位数字 |
 | enable_waiting_room | bool | 启用等候室 |
@@ -176,7 +176,7 @@ POST meeting/create
 
 **reminders 子字段（重复会议）**
 
-| 字段 | 类型 | 说明 |
+| Field | Type | Description |
 |------|------|------|
 | is_repeat | int | 1=重复, 0=单次 |
 | repeat_type | int | 0=每天, 1=每周, 2=每月, 7=工作日 |
@@ -237,7 +237,7 @@ POST meeting/get_info
 
 **响应核心字段**
 
-| 字段 | 类型 | 说明 |
+| Field | Type | Description |
 |------|------|------|
 | admin_userid | string | 创建者 |
 | title | string | 标题 |

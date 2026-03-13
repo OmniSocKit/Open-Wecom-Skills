@@ -1,10 +1,10 @@
-# SKILL 实战示例 — AI 回答对比演示
+# SKILL Live Demo — AI Response Comparison
 
-> 本文档展示：当开发者向 AI 大模型提出企业微信开发需求时，**加载 SKILL** 与 **未加载 SKILL** 的回答质量差异。
+> This document shows the quality difference when developers ask AI models about WeCom development: **with SKILL** vs **without SKILL**.
 
 ---
 
-## 📝 开发者提问
+## 📝 Developer Question
 
 > 我想在企业微信中实现客户列表，方便管理员查看所有的客户基础信息以及会话存档。同时需要实现客户的在职继承和离职继承。而且在客户完成继承之后，新的接替员工能看到原员工跟这个客户的会话存档，也就是说会话信息需要同步过去。
 
@@ -17,9 +17,9 @@
 
 ---
 
-## 🤖 AI 完整回答（加载 SKILL 后）
+## 🤖 AI Full Response (With SKILL Loaded)
 
-### 一、整体架构
+### 1. Overall Architecture
 
 你的需求涉及 **4 个企业微信能力域**，我来逐一拆解方案。
 
@@ -59,7 +59,7 @@
 
 ---
 
-### 二、模块 1 — 客户列表
+### 2. Module 1 — Customer List
 
 #### API 调用链路
 
@@ -112,7 +112,7 @@ class CustomerService:
 
 ---
 
-### 三、模块 2 — 客户继承（在职 + 离职）
+### 3. Module 2 — Customer Transfer (On-job + Resigned)
 
 #### 在职继承 vs 离职继承 关键差异
 
@@ -212,7 +212,7 @@ class TransferService:
 
 ---
 
-### 四、模块 3 — 会话存档
+### 4. Module 3 — Chat Archive
 
 > **⚠️ 重要：企业微信的会话存档是付费功能**，需要在管理后台开通。
 
@@ -265,7 +265,7 @@ class ArchiveService:
 
 ---
 
-### 五、继承后会话同步方案
+### 5. Post-Transfer Chat Sync Solution
 
 这是需求中最关键也最复杂的部分。核心理解：
 
@@ -369,7 +369,7 @@ def handle_callback(msg_xml):
 
 ---
 
-### 六、数据库表设计建议
+### 6. Database Schema Recommendation
 
 ```sql
 -- 会话存档原始数据
@@ -413,7 +413,7 @@ CREATE TABLE transfer_records (
 
 ---
 
-### 七、注意事项清单
+### 7. Checklist
 
 | # | 检查项 | 严重度 |
 |---|--------|--------|
@@ -430,13 +430,13 @@ CREATE TABLE transfer_records (
 
 ---
 
-## ⚡ 核心差异：有 SKILL vs 没有 SKILL
+## ⚡ Core Difference: With SKILL vs Without SKILL
 
 > 以下对比表展示了同一问题下，AI 有无 SKILL 知识加持的回答质量差距。
 
-### 差异总览
+### Difference Overview
 
-| 维度 | 没有 SKILL ❌ | 有 SKILL ✅ |
+| Dimension | Without SKILL ❌ | With SKILL ✅ |
 |------|-------------|-----------|
 | **API 路径** | 可能编造不存在的 endpoint | 精确到 `/externalcontact/resigned/transfer_customer` |
 | **follow_user vs follow_info** | 完全不知道这个字段差异 | 主动标注为 **CRITICAL** 级陷阱 |
@@ -451,7 +451,7 @@ CREATE TABLE transfer_records (
 | **接替前置条件** | 不知道 | 实名 + 激活 + 客户联系功能 三重校验 |
 | **查询时序** | 调完立刻查 | 提醒离职继承立即查询**可能返回空**（延迟 5~10 秒） |
 
-### 逐场景深度对比
+### Detailed Scenario Comparison
 
 #### 场景 1: "帮我获取所有客户列表"
 
@@ -483,11 +483,11 @@ CREATE TABLE transfer_records (
 
 ---
 
-## 📐 SKILL 调用清单
+## 📐 SKILL Reference List
 
 本回答实际参考的 SKILL 文件：
 
-| SKILL 文件 | 引用内容 |
+| SKILL File | Referenced Content |
 |-----------|---------|
 | `skills/enterprise/wecom-core.md` | Token 缓存、错误码、代码规范 |
 | `skills/enterprise/wecom-crm-customer.md` | C1~C6 API、follow_user vs follow_info 差异、84061 处理 |

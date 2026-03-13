@@ -24,7 +24,7 @@ api_count: 21
 callback_count: 1
 ---
 
-# WeCom · 微信客服 SKILL
+# WeCom · Customer Service SKILL
 
 > 覆盖企业微信「微信客服」全域：客服账号 CRUD、接待人员管理、消息收发与同步、会话状态流转、客户信息获取、升级服务、知识库管理、数据统计，以及客服消息/事件回调。
 > 依赖 `wecom-core` SKILL 提供的 WeComClient 基础客户端。

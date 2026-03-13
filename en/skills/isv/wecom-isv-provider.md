@@ -29,7 +29,7 @@ triggers:
   - 服务商级接口
 ---
 
-# WeCom ISV · 服务商管理 SKILL (wecom-isv-provider)
+# WeCom ISV · Provider Management SKILL (wecom-isv-provider)
 
 > 覆盖企业微信服务商级别管理接口：provider_access_token 凭证管理、服务商后台扫码免登、通讯录 ID 转译（userid ↔ open_userid）、corpid 转换（corpid → opencorpid）、企业推广注册、应用可见范围设置、企业详情获取、API 域名 IP 段获取，以及 2 种服务商回调事件。
 > 依赖 `wecom-isv-core` SKILL 提供的 WeComISVClient 基础客户端和三级凭证体系。
@@ -159,7 +159,7 @@ triggers:
 
 **请求参数 (JSON Body):**
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | corpid | string | 是 | **服务商自己的** corpid（非授权企业的 corpid） |
 | provider_secret | string | 是 | 服务商密钥（服务商管理后台获取） |
@@ -175,7 +175,7 @@ triggers:
 
 **返回字段:**
 
-| 字段 | 类型 | 说明 |
+| Field | Type | Description |
 |------|------|------|
 | errcode | int | 返回码 |
 | errmsg | string | 返回信息 |
@@ -210,7 +210,7 @@ triggers:
 
 **请求参数 (JSON Body):**
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | auth_code | string | 是 | 服务商后台扫码登录回调返回的临时授权码 |
 
@@ -224,7 +224,7 @@ triggers:
 
 **返回字段:**
 
-| 字段 | 类型 | 说明 |
+| Field | Type | Description |
 |------|------|------|
 | errcode | int | 返回码 |
 | errmsg | string | 返回信息 |
@@ -281,7 +281,7 @@ triggers:
 
 **请求参数 (JSON Body):**
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | open_userid_list | string[] | 是 | 服务商加密的 open_userid 列表，最多 **1000 个** |
 
@@ -298,7 +298,7 @@ triggers:
 
 **返回字段:**
 
-| 字段 | 类型 | 说明 |
+| Field | Type | Description |
 |------|------|------|
 | errcode | int | 返回码 |
 | errmsg | string | 返回信息 |
@@ -339,7 +339,7 @@ triggers:
 
 **请求参数 (JSON Body):**
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | corpid | string | 是 | 企业原始 corpid |
 
@@ -353,7 +353,7 @@ triggers:
 
 **返回字段:**
 
-| 字段 | 类型 | 说明 |
+| Field | Type | Description |
 |------|------|------|
 | errcode | int | 返回码 |
 | errmsg | string | 返回信息 |
@@ -384,7 +384,7 @@ triggers:
 
 **请求参数 (JSON Body):**
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | template_id | string | 是 | 推广注册模版 ID（服务商管理后台创建） |
 | corp_name | string | 否 | 企业名称（预填） |
@@ -406,7 +406,7 @@ triggers:
 
 **返回字段:**
 
-| 字段 | 类型 | 说明 |
+| Field | Type | Description |
 |------|------|------|
 | errcode | int | 返回码 |
 | errmsg | string | 返回信息 |
@@ -441,7 +441,7 @@ triggers:
 
 **请求参数 (JSON Body):**
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | register_code | string | 是 | 注册码（来自 register_corp 回调或 P5 返回） |
 
@@ -455,7 +455,7 @@ triggers:
 
 **返回字段:**
 
-| 字段 | 类型 | 说明 |
+| Field | Type | Description |
 |------|------|------|
 | errcode | int | 返回码 |
 | errmsg | string | 返回信息 |
@@ -492,7 +492,7 @@ triggers:
 
 **请求参数 (JSON Body):**
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | agentid | int | 是 | 授权应用的 agentid |
 | allow_user | string[] | 否 | 可见成员 userid 列表 |
@@ -512,7 +512,7 @@ triggers:
 
 **返回字段:**
 
-| 字段 | 类型 | 说明 |
+| Field | Type | Description |
 |------|------|------|
 | errcode | int | 返回码 |
 | errmsg | string | 返回信息 |
@@ -542,7 +542,7 @@ triggers:
 
 **请求参数 (JSON Body):**
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | auth_corpid | string | 是 | 授权企业的 corpid |
 
@@ -556,7 +556,7 @@ triggers:
 
 **返回字段:**
 
-| 字段 | 类型 | 说明 |
+| Field | Type | Description |
 |------|------|------|
 | errcode | int | 返回码 |
 | errmsg | string | 返回信息 |
@@ -597,7 +597,7 @@ triggers:
 
 **返回字段:**
 
-| 字段 | 类型 | 说明 |
+| Field | Type | Description |
 |------|------|------|
 | errcode | int | 返回码 |
 | errmsg | string | 返回信息 |

@@ -27,7 +27,7 @@ triggers:
   - InfoType
 ---
 
-# 企业微信服务商代开发回调体系 (wecom-isv-callback)
+# WeCom ISV Callback System (wecom-isv-callback)
 
 你现在是企业微信**服务商代开发回调体系**领域的专家。基于本 SKILL 的知识，帮助开发者快速、正确地实现代开发应用的回调接收、事件路由与业务处理。
 

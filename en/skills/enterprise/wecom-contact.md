@@ -6,7 +6,7 @@ description: |
   依赖 wecom-core 基座 SKILL。
 ---
 
-# 企业微信 - 通讯录管理 (wecom-contact)
+# WeCom Contact Management (wecom-contact)
 
 你现在是企业微信通讯录管理专家。基于本 SKILL 的知识，帮助开发者正确地管理企业组织架构。
 
@@ -50,7 +50,7 @@ description: |
 
 ### 3.1 成员管理
 
-| 操作 | 方法 | 端点路径 | 关键参数 | 幂等 |
+| Operation | Method | Endpoint | Key Parameters | Idempotent |
 |------|------|----------|----------|------|
 | 创建成员 | POST | /user/create | userid(必填), name(必填) | 否 |
 | 读取成员 | GET | /user/get | userid(必填) | 是 |
@@ -69,7 +69,7 @@ description: |
 
 ### 3.2 部门管理
 
-| 操作 | 方法 | 端点路径 | 关键参数 | 幂等 |
+| Operation | Method | Endpoint | Key Parameters | Idempotent |
 |------|------|----------|----------|------|
 | 创建部门 | POST | /department/create | name(必填), parentid(必填) | 否 |
 | 更新部门 | POST | /department/update | id(必填) | 是 |
@@ -80,7 +80,7 @@ description: |
 
 ### 3.3 标签管理
 
-| 操作 | 方法 | 端点路径 | 关键参数 | 幂等 |
+| Operation | Method | Endpoint | Key Parameters | Idempotent |
 |------|------|----------|----------|------|
 | 创建标签 | POST | /tag/create | tagname(必填) | 否 |
 | 更新标签名 | POST | /tag/update | tagid(必填), tagname(必填) | 是 |
@@ -92,7 +92,7 @@ description: |
 
 ### 3.4 异步导入
 
-| 操作 | 方法 | 端点路径 | 关键参数 | 幂等 |
+| Operation | Method | Endpoint | Key Parameters | Idempotent |
 |------|------|----------|----------|------|
 | 增量更新成员 | POST | /batch/syncuser | media_id(必填), callback | 否 |
 | 全量覆盖成员 | POST | /batch/replaceuser | media_id(必填), callback | 否 |
@@ -101,7 +101,7 @@ description: |
 
 ### 3.5 异步导出
 
-| 操作 | 方法 | 端点路径 | 关键参数 | 幂等 |
+| Operation | Method | Endpoint | Key Parameters | Idempotent |
 |------|------|----------|----------|------|
 | 导出成员 | POST | /export/simple_user | encoding_aeskey, block_size | 否 |
 | 导出成员详情 | POST | /export/user | encoding_aeskey, block_size | 否 |
@@ -120,7 +120,7 @@ description: |
 - **频率限制**: 通讯录写入 300次/分钟
 - **请求参数**:
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | access_token | string | 是 | 调用凭证 (query) |
 | userid | string | 是 | 成员 UserID，1~64 字节，由数字、字母和 `_-@.` 组成，首字符须为数字或字母 |
@@ -169,7 +169,7 @@ description: |
 - **权限**: 应用须拥有指定成员的查看权限
 - **请求参数**:
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | access_token | string | 是 | 调用凭证 (query) |
 | userid | string | 是 | 成员 UserID |
@@ -234,7 +234,7 @@ description: |
 - **接口**: GET https://qyapi.weixin.qq.com/cgi-bin/user/simplelist?access_token=ACCESS_TOKEN&department_id=DEPARTMENT_ID
 - **请求参数**:
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | department_id | int | 是 | 部门 id |
 
@@ -305,7 +305,7 @@ description: |
 - **接口**: POST https://qyapi.weixin.qq.com/cgi-bin/department/create?access_token=ACCESS_TOKEN
 - **请求参数**:
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parameter | Type | Required | Description |
 |------|------|------|------|
 | name | string | 是 | 部门名称，1~64 UTF-8 字符，同层不重复，不含 `\:*?"<>｜` |
 | name_en | string | 否 | 英文名（需开启多语言支持） |
