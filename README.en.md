@@ -4,7 +4,7 @@
 
 **Make Your AI Model a WeCom Development Expert**
 
-42 Skills · 550+ APIs · Comprehensive Coverage of Three Major Development Modes
+41 Skills · 550+ APIs · Comprehensive Coverage of Three Major Development Modes
 
 English | [简体中文](./README.md)
 
