@@ -9,7 +9,7 @@
 [English](./README.en.md) | 简体中文
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
-[![Docs](https://img.shields.io/badge/Docs-GitHub_Pages-14b8a6?logo=github)](https://omnisockit.github.io/Open-Wecom-Skills/)
+[![Docs](https://img.shields.io/badge/Docs-omnisockit.com-14b8a6?logo=github)](https://omnisockit.com)
 
 </div>
 

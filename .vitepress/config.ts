@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   /* ── Site Meta ── */
-  base: '/Open-Wecom-Skills/',
+  base: '/',
   lang: 'zh-CN',
   title: 'Open WeCom Skills',
   description: '让你的 AI 大模型成为企业微信开发专家 — 41 Skills · 550+ APIs · 三大开发模式全覆盖',
