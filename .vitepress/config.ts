@@ -52,6 +52,13 @@ export default defineConfig({
           { text: '第三方应用', link: '/skills/third-party/wecom-3rd-quickstart' },
         ],
       },
+      {
+        text: '🌐 Lang',
+        items: [
+          { text: '简体中文', link: '/' },
+          { text: 'English', link: 'https://github.com/OmniSocKit/Open-Wecom-Skills/blob/main/README.en.md' },
+        ],
+      },
     ],
 
     /* ── Sidebar ── */
@@ -202,7 +209,7 @@ export default defineConfig({
 
     /* ── Social Links ── */
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/iuraixmi/Open-Wecom-Skills' },
+      { icon: 'github', link: 'https://github.com/OmniSocKit/Open-Wecom-Skills' },
     ],
 
     /* ── Footer ── */
@@ -212,7 +219,7 @@ export default defineConfig({
     },
 
     editLink: {
-      pattern: 'https://github.com/iuraixmi/Open-Wecom-Skills/edit/main/:path',
+      pattern: 'https://github.com/OmniSocKit/Open-Wecom-Skills/edit/main/:path',
       text: '在 GitHub 上编辑此页',
     },
 
