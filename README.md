@@ -221,6 +221,6 @@ Open WeCom Skills 可配合以下 AI 工具使用：
 
 **如果觉得有用，请给一个 ⭐ Star！**
 
-[官网](https://github.com/OmniSocKit/Open-Wecom-Skills) · [Issues](https://github.com/OmniSocKit/Open-Wecom-Skills/issues) · [Discussions](https://github.com/OmniSocKit/Open-Wecom-Skills/discussions)
+[官网](https://github.com/OmniSocKit/Open-Wecom-Skills) · [Issues](https://github.com/OmniSocKit/Open-Wecom-Skills/issues)
 
 </div>

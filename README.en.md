@@ -115,6 +115,6 @@ This project is licensed under [Apache License 2.0](LICENSE).
 
 **If you find this useful, please give it a ⭐ Star!**
 
-[Website](https://github.com/OmniSocKit/Open-Wecom-Skills) · [Issues](https://github.com/OmniSocKit/Open-Wecom-Skills/issues) · [Discussions](https://github.com/OmniSocKit/Open-Wecom-Skills/discussions)
+[Website](https://github.com/OmniSocKit/Open-Wecom-Skills) · [Issues](https://github.com/OmniSocKit/Open-Wecom-Skills/issues)
 
 </div>

@@ -89,6 +89,5 @@ git push origin feat/your-feature-name
 ## 💬 有问题？
 
 - 提交 [Issue](https://github.com/OmniSocKit/Open-Wecom-Skills/issues) 报告问题或建议
-- 在 [Discussions](https://github.com/OmniSocKit/Open-Wecom-Skills/discussions) 中参与讨论
 
 感谢你的贡献！🙏
