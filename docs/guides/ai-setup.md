@@ -198,7 +198,7 @@ cp -r /path/to/open-wecom-skills/skills/ ./skills/
 ## 最佳实践
 
 ::: tip 按需加载
-不需要一次性导入全部 41 个 SKILL。根据你的项目实际使用的功能域，选择性加载：
+不需要一次性导入全部 42 个 SKILL。根据你的项目实际使用的功能域，选择性加载：
 
 - **只做客户管理？** → `wecom-core` + `wecom-crm-*`
 - **只做审批流程？** → `wecom-core` + `wecom-approval`

@@ -113,7 +113,7 @@ export default defineConfig({
     root: {
       label: '简体中文',
       lang: 'zh-CN',
-      description: '让你的 AI 大模型成为企业微信开发专家 — 41 Skills · 550+ APIs · 三大开发模式全覆盖',
+      description: '让你的 AI 大模型成为企业微信开发专家 — 42 Skills · 550+ APIs · 三大开发模式全覆盖',
       themeConfig: {
         nav: [
           { text: '首页', link: '/' },
@@ -171,7 +171,7 @@ export default defineConfig({
       label: 'English',
       lang: 'en-US',
       link: '/en/',
-      description: 'Make your AI model a WeCom development expert — 41 Skills · 550+ APIs · 3 development modes',
+      description: 'Make your AI model a WeCom development expert — 42 Skills · 550+ APIs · 3 development modes',
       themeConfig: {
         nav: [
           { text: 'Home', link: '/en/' },

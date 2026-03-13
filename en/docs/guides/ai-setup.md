@@ -198,7 +198,7 @@ Import all SKILL files into your AI tool's knowledge base (if supported) for aut
 ## Best Practices
 
 ::: tip Load On Demand
-No need to import all 41 SKILLs at once. Selectively load based on your project's actual needs:
+No need to import all 42 SKILLs at once. Selectively load based on your project's actual needs:
 
 - **CRM only?** → `wecom-core` + `wecom-crm-*`
 - **Approval workflows?** → `wecom-core` + `wecom-approval`

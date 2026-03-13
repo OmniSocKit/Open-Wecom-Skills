@@ -4,7 +4,7 @@ title: Skills Overview
 
 # Skills
 
-Make your AI model a WeCom (Enterprise WeChat) development expert, covering **3 development modes** with **41 SKILLs**.
+Make your AI model a WeCom (Enterprise WeChat) development expert, covering **3 development modes** with **42 SKILLs**.
 
 Each SKILL includes: Structured API reference · Parameter details · Gotcha guide · 5-language code templates
 
