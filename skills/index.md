@@ -109,4 +109,4 @@ title: Skills 总览
 ## 相关资源
 
 - [SKILL 架构规范](/docs/guides/architecture) — 了解 SKILL 的内部结构
-- [贡献指南](https://github.com/iuraixmi/Open-Wecom-Skills/blob/main/CONTRIBUTING.md) — Fork → 新增 / 修改 SKILL → 提交 PR
+- [贡献指南](https://github.com/OmniSocKit/Open-Wecom-Skills/blob/main/CONTRIBUTING.md) — Fork → 新增 / 修改 SKILL → 提交 PR

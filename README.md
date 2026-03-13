@@ -9,7 +9,7 @@
 [English](./README.en.md) | 简体中文
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
-[![Docs](https://img.shields.io/badge/Docs-GitHub_Pages-14b8a6?logo=github)](https://iuraixmi.github.io/Open-Wecom-Skills/)
+[![Docs](https://img.shields.io/badge/Docs-GitHub_Pages-14b8a6?logo=github)](https://omnisockit.github.io/Open-Wecom-Skills/)
 
 </div>
 
@@ -65,7 +65,7 @@ echo "参考 skills/ 目录中的企业微信 SKILL 文档" >> .cursorrules
 
 ```bash
 # 克隆仓库
-git clone https://github.com/iuraixmi/Open-Wecom-Skills.git
+git clone https://github.com/OmniSocKit/Open-Wecom-Skills.git
 
 # 查看 SKILL 分类
 ls skills/             # enterprise/ isv/ third-party/
@@ -207,7 +207,7 @@ Open WeCom Skills 可配合以下 AI 工具使用：
 ---
 
 > [!NOTE]
-> 🚧 **本项目仍在持续优化中。** SKILL 内容会随企业微信 API 更新而迭代，部分模块的代码模板和踩坑指南还在完善中。如果你在使用过程中发现任何问题或有改进建议，非常欢迎提交 [Issue](https://github.com/iuraixmi/Open-Wecom-Skills/issues) 或 [Pull Request](https://github.com/iuraixmi/Open-Wecom-Skills/pulls)，你的反馈是这个项目变得更好的关键驱动力。
+> 🚧 **本项目仍在持续优化中。** SKILL 内容会随企业微信 API 更新而迭代，部分模块的代码模板和踩坑指南还在完善中。如果你在使用过程中发现任何问题或有改进建议，非常欢迎提交 [Issue](https://github.com/OmniSocKit/Open-Wecom-Skills/issues) 或 [Pull Request](https://github.com/OmniSocKit/Open-Wecom-Skills/pulls)，你的反馈是这个项目变得更好的关键驱动力。
 
 ---
 
@@ -221,6 +221,6 @@ Open WeCom Skills 可配合以下 AI 工具使用：
 
 **如果觉得有用，请给一个 ⭐ Star！**
 
-[官网](https://github.com/iuraixmi/Open-Wecom-Skills) · [Issues](https://github.com/iuraixmi/Open-Wecom-Skills/issues) · [Discussions](https://github.com/iuraixmi/Open-Wecom-Skills/discussions)
+[官网](https://github.com/OmniSocKit/Open-Wecom-Skills) · [Issues](https://github.com/OmniSocKit/Open-Wecom-Skills/issues) · [Discussions](https://github.com/OmniSocKit/Open-Wecom-Skills/discussions)
 
 </div>

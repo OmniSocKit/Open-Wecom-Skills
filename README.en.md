@@ -50,7 +50,7 @@ echo "Refer to skills/ directory for WeCom SKILL docs" >> .cursorrules
 ### Method 2: As Developer Reference
 
 ```bash
-git clone https://github.com/iuraixmi/Open-Wecom-Skills.git
+git clone https://github.com/OmniSocKit/Open-Wecom-Skills.git
 ls skills/             # enterprise/ isv/ third-party/
 cat skills/enterprise/wecom-core.md  # Start with the core auth SKILL
 ```
@@ -101,7 +101,7 @@ TL;DR: Fork → Add/Edit SKILL → Submit PR
 ---
 
 > [!NOTE]
-> 🚧 **This project is under active development.** SKILL content evolves alongside WeCom API updates, and some modules' code templates and gotcha guides are still being refined. If you encounter any issues or have suggestions for improvement, we warmly welcome you to open an [Issue](https://github.com/iuraixmi/Open-Wecom-Skills/issues) or submit a [Pull Request](https://github.com/iuraixmi/Open-Wecom-Skills/pulls). Your feedback is what drives this project forward.
+> 🚧 **This project is under active development.** SKILL content evolves alongside WeCom API updates, and some modules' code templates and gotcha guides are still being refined. If you encounter any issues or have suggestions for improvement, we warmly welcome you to open an [Issue](https://github.com/OmniSocKit/Open-Wecom-Skills/issues) or submit a [Pull Request](https://github.com/OmniSocKit/Open-Wecom-Skills/pulls). Your feedback is what drives this project forward.
 
 ---
 
@@ -115,6 +115,6 @@ This project is licensed under [Apache License 2.0](LICENSE).
 
 **If you find this useful, please give it a ⭐ Star!**
 
-[Website](https://github.com/iuraixmi/Open-Wecom-Skills) · [Issues](https://github.com/iuraixmi/Open-Wecom-Skills/issues) · [Discussions](https://github.com/iuraixmi/Open-Wecom-Skills/discussions)
+[Website](https://github.com/OmniSocKit/Open-Wecom-Skills) · [Issues](https://github.com/OmniSocKit/Open-Wecom-Skills/issues) · [Discussions](https://github.com/OmniSocKit/Open-Wecom-Skills/discussions)
 
 </div>

@@ -11,7 +11,7 @@ title: 快速使用 — 在 AI 工具中配置 Skills
 1. **克隆仓库**
 
 ```bash
-git clone https://github.com/iuraixmi/Open-Wecom-Skills.git
+git clone https://github.com/OmniSocKit/Open-Wecom-Skills.git
 ```
 
 2. **选择所需 SKILL 文件**

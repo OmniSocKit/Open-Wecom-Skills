@@ -72,7 +72,7 @@ git push origin feat/your-feature-name
 
 ## 💬 Questions?
 
-- Open an [Issue](https://github.com/iuraixmi/Open-Wecom-Skills/issues) for bugs or suggestions
-- Join [Discussions](https://github.com/iuraixmi/Open-Wecom-Skills/discussions) for general topics
+- Open an [Issue](https://github.com/OmniSocKit/Open-Wecom-Skills/issues) for bugs or suggestions
+- Join [Discussions](https://github.com/OmniSocKit/Open-Wecom-Skills/discussions) for general topics
 
 Thank you for contributing! 🙏

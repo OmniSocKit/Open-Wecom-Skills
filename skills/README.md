@@ -2,7 +2,7 @@
 
 > 本目录按**开发模式**组织企业微信 API SKILL 文件，共 **41 个 SKILL**。
 >
-> 📖 **在线文档**：建议通过 [文档站](https://github.com/iuraixmi/Open-Wecom-Skills) 浏览，体验更佳（搜索 + 侧边栏导航）。
+> 📖 **在线文档**：建议通过 [文档站](https://github.com/OmniSocKit/Open-Wecom-Skills) 浏览，体验更佳（搜索 + 侧边栏导航）。
 
 ---
 
