@@ -5,7 +5,7 @@ import {
   Crosshair, Rocket, ArrowRight, BookOpen,
   Terminal, GitBranch, Globe, CheckCircle2, XCircle, Sparkles,
   Layers, Users, Briefcase, Headphones, Smartphone, Database, Factory,
-  ChevronRight, ExternalLink
+  ChevronRight, ExternalLink, Cpu, Copy
 } from 'lucide-vue-next'
 
 const visible = ref(false)
@@ -35,7 +35,7 @@ const stats = [
   { value: '41', label: 'Skills', icon: Layers },
   { value: '550+', label: 'APIs', icon: Code2 },
   { value: '75+', label: '回调', icon: GitBranch },
-  { value: '3', label: '开发模式', icon: Globe },
+  { value: 'MCP', label: '一行接入', icon: Cpu },
   { value: '5', label: '语言模板', icon: Terminal },
 ]
 
@@ -52,9 +52,9 @@ const values = [
 ]
 
 const howSteps = [
-  { num: '01', title: '克隆仓库', desc: '获取 Skills 文件到本地', icon: GitBranch },
-  { num: '02', title: '注册到 AI 工具', desc: '将 SKILL 配置到编码助手中', icon: Terminal },
-  { num: '03', title: '提出需求', desc: 'AI 自动匹配 SKILL 并加载知识', icon: Sparkles },
+  { num: '01', title: '添加 MCP 配置', desc: '在 AI 工具中添加一行 JSON 配置', icon: Terminal },
+  { num: '02', title: 'AI 自动发现', desc: 'AI 自动发现 41 个企微 SKILL 可读取', icon: Sparkles },
+  { num: '03', title: '提出需求', desc: '像平常一样对 AI 说话，AI 按需读取 SKILL', icon: GitBranch },
   { num: '04', title: '精确输出', desc: '基于精确知识生成代码，自动避坑', icon: CheckCircle2 },
 ]
 
@@ -77,12 +77,31 @@ const domains = [
 ]
 
 const aiTools = [
-  { name: 'Claude Code', icon: Terminal },
-  { name: 'Codex', icon: Code2 },
+  { name: 'Claude Desktop', icon: Terminal },
+  { name: 'Claude Code', icon: Code2 },
   { name: 'Cursor', icon: Sparkles },
-  { name: 'Copilot', icon: GitBranch },
   { name: 'Windsurf', icon: Globe },
+  { name: 'VS Code + Copilot', icon: GitBranch },
+  { name: 'Trae', icon: Cpu },
+  { name: 'Cline', icon: Terminal },
+  { name: 'Cherry Studio', icon: Sparkles },
 ]
+
+const mcpConfig = `{
+  "mcpServers": {
+    "omnisockit": {
+      "command": "npx",
+      "args": ["@omnisockit/mcp-server"]
+    }
+  }
+}`
+
+const copied = ref(false)
+function copyConfig() {
+  navigator.clipboard.writeText(mcpConfig)
+  copied.value = true
+  setTimeout(() => { copied.value = false }, 2000)
+}
 </script>
 
 <template>
@@ -105,12 +124,12 @@ const aiTools = [
           <span class="hc-typed-text">{{ typedText.split('Skills')[0] }}</span><span v-if="typedText.includes('Skills')" class="hc-accent">Skills</span><span class="hc-cursor" :class="{ 'hc-cursor--blink': typingDone }">|</span>
         </h1>
         <p class="hc-hero-sub anim-slide" style="--d:2">让你的 AI 大模型成为企业微信开发专家</p>
-        <p class="hc-hero-sub2 anim-slide" style="--d:2">结构化 API 参考 · 踩坑指南 · 可复用代码模板 — 让 AI 从「随机猜」变成「精确查」</p>
+        <p class="hc-hero-sub2 anim-slide" style="--d:2">MCP 一行命令接入 · 结构化 API 参考 · 踩坑指南 · 可复用代码模板</p>
 
         <div class="hc-hero-actions anim-slide" style="--d:3">
-          <a href="/docs/guides/ai-setup" class="hc-btn hc-btn--primary">
+          <a href="/docs/guides/mcp-setup" class="hc-btn hc-btn--primary">
             <Rocket :size="16" />
-            快速使用
+            MCP 接入指南
           </a>
           <a href="/skills/" class="hc-btn hc-btn--secondary">
             <BookOpen :size="16" />
@@ -161,6 +180,75 @@ const aiTools = [
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- ══ MCP ══ -->
+    <section class="hc-section hc-section--mcp anim-section">
+      <div class="hc-container">
+        <div class="hc-section-head">
+          <Cpu :size="18" class="hc-label-icon" />
+          <span class="hc-label">MCP</span>
+        </div>
+        <h2>最优雅的接入方式</h2>
+        <p class="hc-subtitle">一行配置，让你的 AI 工具自动获取企微开发知识</p>
+
+        <div class="hc-mcp-grid">
+          <div class="hc-mcp-code">
+            <div class="hc-mcp-code-header">
+              <span class="hc-mcp-code-dot hc-mcp-code-dot--r" />
+              <span class="hc-mcp-code-dot hc-mcp-code-dot--y" />
+              <span class="hc-mcp-code-dot hc-mcp-code-dot--g" />
+              <span class="hc-mcp-code-title">mcp.json</span>
+              <button class="hc-mcp-copy" @click="copyConfig">
+                <Copy v-if="!copied" :size="14" />
+                <CheckCircle2 v-else :size="14" />
+                {{ copied ? '已复制' : '复制' }}
+              </button>
+            </div>
+            <pre class="hc-mcp-code-body"><code>{{ mcpConfig }}</code></pre>
+          </div>
+          <div class="hc-mcp-features">
+            <div class="hc-mcp-feature">
+              <div class="hc-mcp-feature-icon" style="--fc: #14b8a6">
+                <Zap :size="20" />
+              </div>
+              <div>
+                <h4>零配置</h4>
+                <p>不需要 API Key、不需要 Docker、不需要服务器。安装 Node.js 即可使用。</p>
+              </div>
+            </div>
+            <div class="hc-mcp-feature">
+              <div class="hc-mcp-feature-icon" style="--fc: #8b5cf6">
+                <Target :size="20" />
+              </div>
+              <div>
+                <h4>按需加载</h4>
+                <p>AI 只读取当前需要的 SKILL，不会信息过载，不浪费上下文窗口。</p>
+              </div>
+            </div>
+            <div class="hc-mcp-feature">
+              <div class="hc-mcp-feature-icon" style="--fc: #f59e0b">
+                <Shield :size="20" />
+              </div>
+              <div>
+                <h4>零风险</h4>
+                <p>不调用任何外部 API，只提供知识。你的代码、你的控制。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hc-mcp-cta">
+          <a href="/docs/guides/mcp-setup" class="hc-btn hc-btn--primary">
+            <Rocket :size="16" />
+            查看 MCP 配置指南
+          </a>
+          <a href="https://www.npmjs.com/package/@omnisockit/mcp-server" target="_blank" class="hc-btn hc-btn--secondary">
+            npm 包 <ExternalLink :size="14" />
+          </a>
+        </div>
+        <p class="hc-mcp-hint">兼容所有主流 AI 工具 · 更多平台 · 即将到来</p>
       </div>
     </section>
 
@@ -247,15 +335,15 @@ const aiTools = [
         </div>
 
         <div class="hc-ai-tools">
-          <p class="hc-ai-tools-label">支持主流 AI 大模型工具</p>
+          <p class="hc-ai-tools-label">兼容所有主流 AI 工具</p>
           <div class="hc-ai-tools-list">
             <span v-for="t in aiTools" :key="t.name" class="hc-ai-tool">
               <component :is="t.icon" :size="14" />
               {{ t.name }}
             </span>
           </div>
-          <a href="/docs/guides/ai-setup" class="hc-btn hc-btn--secondary hc-btn--sm">
-            查看配置指南 <ArrowRight :size="14" />
+          <a href="/docs/guides/mcp-setup" class="hc-btn hc-btn--secondary hc-btn--sm">
+            查看 MCP 配置指南 <ArrowRight :size="14" />
           </a>
         </div>
       </div>

@@ -113,11 +113,17 @@ export default defineConfig({
     root: {
       label: '简体中文',
       lang: 'zh-CN',
-      description: '让你的 AI 大模型成为企业微信开发专家 — 41 Skills · 550+ APIs · 三大开发模式全覆盖',
+      description: '让你的 AI 大模型成为企业微信开发专家 — 41 Skills · 550+ APIs · MCP 一行命令接入',
       themeConfig: {
         nav: [
           { text: '首页', link: '/' },
-          { text: '快速开始', link: '/docs/guides/ai-setup' },
+          {
+            text: '快速开始',
+            items: [
+              { text: 'MCP 接入（推荐）', link: '/docs/guides/mcp-setup' },
+              { text: '手动配置', link: '/docs/guides/ai-setup' },
+            ],
+          },
           { text: '参考案例', link: '/docs/showcase/skill-demo-response' },
           {
             text: 'Skills',
@@ -132,7 +138,8 @@ export default defineConfig({
         sidebar: {
           '/docs/': [
             { text: '指南', items: [
-              { text: '快速开始', link: '/docs/guides/ai-setup' },
+              { text: 'MCP 接入指南（推荐）', link: '/docs/guides/mcp-setup' },
+              { text: '手动配置', link: '/docs/guides/ai-setup' },
               { text: 'SKILL 架构规范', link: '/docs/guides/architecture' },
             ]},
             { text: '参考', items: [
@@ -171,11 +178,17 @@ export default defineConfig({
       label: 'English',
       lang: 'en-US',
       link: '/en/',
-      description: 'Make your AI model a WeCom development expert — 41 Skills · 550+ APIs · 3 development modes',
+      description: 'Make your AI model a WeCom development expert — 41 Skills · 550+ APIs · One-line MCP setup',
       themeConfig: {
         nav: [
           { text: 'Home', link: '/en/' },
-          { text: 'Quick Start', link: '/en/docs/guides/ai-setup' },
+          {
+            text: 'Quick Start',
+            items: [
+              { text: 'MCP Setup (Recommended)', link: '/en/docs/guides/mcp-setup' },
+              { text: 'Manual Setup', link: '/en/docs/guides/ai-setup' },
+            ],
+          },
           { text: 'Showcase', link: '/en/docs/showcase/skill-demo-response' },
           {
             text: 'Skills',
@@ -190,7 +203,8 @@ export default defineConfig({
         sidebar: {
           '/en/docs/': [
             { text: 'Guides', items: [
-              { text: 'Quick Start', link: '/en/docs/guides/ai-setup' },
+              { text: 'MCP Setup (Recommended)', link: '/en/docs/guides/mcp-setup' },
+              { text: 'Manual Setup', link: '/en/docs/guides/ai-setup' },
               { text: 'SKILL Architecture', link: '/en/docs/guides/architecture' },
             ]},
             { text: 'References', items: [

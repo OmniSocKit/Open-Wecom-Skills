@@ -5,7 +5,7 @@ import {
   Crosshair, Rocket, ArrowRight, BookOpen,
   Terminal, GitBranch, Globe, CheckCircle2, XCircle, Sparkles,
   Layers, Users, Briefcase, Headphones, Smartphone, Database, Factory,
-  ChevronRight, ExternalLink
+  ChevronRight, ExternalLink, Cpu, Copy
 } from 'lucide-vue-next'
 
 const visible = ref(false)
@@ -34,7 +34,7 @@ const stats = [
   { value: '41', label: 'Skills', icon: Layers },
   { value: '550+', label: 'APIs', icon: Code2 },
   { value: '75+', label: 'Callbacks', icon: GitBranch },
-  { value: '3', label: 'Dev Modes', icon: Globe },
+  { value: 'MCP', label: 'One-Line Setup', icon: Cpu },
   { value: '5', label: 'Languages', icon: Terminal },
 ]
 
@@ -51,9 +51,9 @@ const values = [
 ]
 
 const howSteps = [
-  { num: '01', title: 'Clone Repository', desc: 'Get Skills files to your local machine', icon: GitBranch },
-  { num: '02', title: 'Register to AI Tool', desc: 'Configure SKILLs into your coding assistant', icon: Terminal },
-  { num: '03', title: 'Ask a Question', desc: 'AI auto-matches and loads relevant SKILL', icon: Sparkles },
+  { num: '01', title: 'Add MCP Config', desc: 'Add one JSON config to your AI tool', icon: Terminal },
+  { num: '02', title: 'AI Auto-Discovers', desc: 'AI automatically finds 41 WeCom SKILLs to read', icon: Sparkles },
+  { num: '03', title: 'Ask a Question', desc: 'Chat normally with AI, it reads SKILLs on demand', icon: GitBranch },
   { num: '04', title: 'Precise Output', desc: 'Generates code with precise knowledge, auto-avoids pitfalls', icon: CheckCircle2 },
 ]
 
@@ -76,12 +76,31 @@ const domains = [
 ]
 
 const aiTools = [
-  { name: 'Claude Code', icon: Terminal },
-  { name: 'Codex', icon: Code2 },
+  { name: 'Claude Desktop', icon: Terminal },
+  { name: 'Claude Code', icon: Code2 },
   { name: 'Cursor', icon: Sparkles },
-  { name: 'Copilot', icon: GitBranch },
   { name: 'Windsurf', icon: Globe },
+  { name: 'VS Code + Copilot', icon: GitBranch },
+  { name: 'Trae', icon: Cpu },
+  { name: 'Cline', icon: Terminal },
+  { name: 'Cherry Studio', icon: Sparkles },
 ]
+
+const mcpConfig = `{
+  "mcpServers": {
+    "omnisockit": {
+      "command": "npx",
+      "args": ["@omnisockit/mcp-server"]
+    }
+  }
+}`
+
+const copied = ref(false)
+function copyConfig() {
+  navigator.clipboard.writeText(mcpConfig)
+  copied.value = true
+  setTimeout(() => { copied.value = false }, 2000)
+}
 </script>
 
 <template>
@@ -104,12 +123,12 @@ const aiTools = [
           <span class="hc-typed-text">{{ typedText.split('Skills')[0] }}</span><span v-if="typedText.includes('Skills')" class="hc-accent">Skills</span><span class="hc-cursor" :class="{ 'hc-cursor--blink': typingDone }">|</span>
         </h1>
         <p class="hc-hero-sub anim-slide" style="--d:2">Make Your AI Model a WeCom Development Expert</p>
-        <p class="hc-hero-sub2 anim-slide" style="--d:2">Structured API references · Gotcha guides · Reusable code templates — Turn AI from "random guessing" to "precise querying"</p>
+        <p class="hc-hero-sub2 anim-slide" style="--d:2">One-line MCP setup · Structured API references · Gotcha guides · Reusable code templates</p>
 
         <div class="hc-hero-actions anim-slide" style="--d:3">
-          <a href="/en/docs/guides/ai-setup" class="hc-btn hc-btn--primary">
+          <a href="/en/docs/guides/mcp-setup" class="hc-btn hc-btn--primary">
             <Rocket :size="16" />
-            Quick Start
+            MCP Setup Guide
           </a>
           <a href="/en/skills/" class="hc-btn hc-btn--secondary">
             <BookOpen :size="16" />
@@ -160,6 +179,75 @@ const aiTools = [
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- ══ MCP ══ -->
+    <section class="hc-section hc-section--mcp anim-section">
+      <div class="hc-container">
+        <div class="hc-section-head">
+          <Cpu :size="18" class="hc-label-icon" />
+          <span class="hc-label">MCP</span>
+        </div>
+        <h2>The Most Elegant Integration</h2>
+        <p class="hc-subtitle">One config line, let your AI tool automatically access WeCom development knowledge</p>
+
+        <div class="hc-mcp-grid">
+          <div class="hc-mcp-code">
+            <div class="hc-mcp-code-header">
+              <span class="hc-mcp-code-dot hc-mcp-code-dot--r" />
+              <span class="hc-mcp-code-dot hc-mcp-code-dot--y" />
+              <span class="hc-mcp-code-dot hc-mcp-code-dot--g" />
+              <span class="hc-mcp-code-title">mcp.json</span>
+              <button class="hc-mcp-copy" @click="copyConfig">
+                <Copy v-if="!copied" :size="14" />
+                <CheckCircle2 v-else :size="14" />
+                {{ copied ? 'Copied' : 'Copy' }}
+              </button>
+            </div>
+            <pre class="hc-mcp-code-body"><code>{{ mcpConfig }}</code></pre>
+          </div>
+          <div class="hc-mcp-features">
+            <div class="hc-mcp-feature">
+              <div class="hc-mcp-feature-icon" style="--fc: #14b8a6">
+                <Zap :size="20" />
+              </div>
+              <div>
+                <h4>Zero Config</h4>
+                <p>No API Key, no Docker, no server. Just install Node.js and go.</p>
+              </div>
+            </div>
+            <div class="hc-mcp-feature">
+              <div class="hc-mcp-feature-icon" style="--fc: #8b5cf6">
+                <Target :size="20" />
+              </div>
+              <div>
+                <h4>On-Demand Loading</h4>
+                <p>AI reads only the SKILL it needs. No context overload, no wasted tokens.</p>
+              </div>
+            </div>
+            <div class="hc-mcp-feature">
+              <div class="hc-mcp-feature-icon" style="--fc: #f59e0b">
+                <Shield :size="20" />
+              </div>
+              <div>
+                <h4>Zero Risk</h4>
+                <p>No external API calls, knowledge-only. Your code, your control.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hc-mcp-cta">
+          <a href="/en/docs/guides/mcp-setup" class="hc-btn hc-btn--primary">
+            <Rocket :size="16" />
+            View MCP Setup Guide
+          </a>
+          <a href="https://www.npmjs.com/package/@omnisockit/mcp-server" target="_blank" class="hc-btn hc-btn--secondary">
+            npm Package <ExternalLink :size="14" />
+          </a>
+        </div>
+        <p class="hc-mcp-hint">Compatible with all mainstream AI tools · More platforms · Coming soon</p>
       </div>
     </section>
 
@@ -246,15 +334,15 @@ const aiTools = [
         </div>
 
         <div class="hc-ai-tools">
-          <p class="hc-ai-tools-label">Compatible with major AI coding tools</p>
+          <p class="hc-ai-tools-label">Compatible with all mainstream AI tools</p>
           <div class="hc-ai-tools-list">
             <span v-for="t in aiTools" :key="t.name" class="hc-ai-tool">
               <component :is="t.icon" :size="14" />
               {{ t.name }}
             </span>
           </div>
-          <a href="/en/docs/guides/ai-setup" class="hc-btn hc-btn--secondary hc-btn--sm">
-            View Setup Guide <ArrowRight :size="14" />
+          <a href="/en/docs/guides/mcp-setup" class="hc-btn hc-btn--secondary hc-btn--sm">
+            View MCP Setup Guide <ArrowRight :size="14" />
           </a>
         </div>
       </div>

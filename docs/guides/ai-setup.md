@@ -2,9 +2,13 @@
 title: 快速使用 — 在 AI 工具中配置 Skills
 ---
 
-# 快速使用
+# 快速使用（手动配置）
 
-将 Open WeCom Skills 配置到你的 AI 大模型中，让 AI 精确掌握企业微信开发知识。
+::: tip 推荐使用 MCP 接入
+手动配置需要克隆仓库并复制文件。更推荐通过 **MCP Server** 一行命令接入：[查看 MCP 接入指南](/docs/guides/mcp-setup)
+:::
+
+将 Open WeCom Skills 配置到你的 AI 大模型中，让 AI 精确掌握企业微信开发知识。以下是手动配置方式。
 
 ## 通用步骤
 
