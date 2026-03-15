@@ -432,6 +432,17 @@ function copyConfig() {
             <p>Fork → 新增/修改 SKILL → 提交 PR</p>
           </div>
         </div>
+        <div class="hc-os-platforms">
+          <a href="https://github.com/OmniSocKit/Open-Wecom-Skills" target="_blank" class="hc-btn hc-btn--secondary hc-btn--sm">
+            <GitBranch :size="14" /> GitHub
+          </a>
+          <a href="https://gitee.com/omni-soc-kit/open-wecom-skills" target="_blank" class="hc-btn hc-btn--secondary hc-btn--sm">
+            <GitBranch :size="14" /> Gitee
+          </a>
+          <a href="https://gitcode.com/omnisockit/OpenWecomSkills" target="_blank" class="hc-btn hc-btn--secondary hc-btn--sm">
+            <GitBranch :size="14" /> GitCode
+          </a>
+        </div>
       </div>
     </section>
 

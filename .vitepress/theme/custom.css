@@ -829,6 +829,14 @@
 .hc-os-card h4 { font-size: 15px; margin: 0 0 6px; }
 .hc-os-card p { font-size: 13px; color: var(--hc-text2); margin: 0; line-height: 1.5; }
 
+.hc-os-platforms {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
 /* ── Responsive ── */
 
 @media (max-width: 720px) {

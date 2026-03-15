@@ -235,6 +235,16 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/OmniSocKit/Open-Wecom-Skills' },
+      {
+        icon: { svg: '<svg viewBox="0 0 24 24"><path fill="currentColor" d="M11.984 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.016 0zm6.09 5.333c.328 0 .593.266.592.593v1.482a.594.594 0 0 1-.593.592H9.777c-.982 0-1.778.796-1.778 1.778v5.63c0 .327.266.592.593.592h5.63c.982 0 1.778-.796 1.778-1.778v-.296a.593.593 0 0 0-.592-.593h-4.15a.59.59 0 0 1-.592-.592v-1.482a.593.593 0 0 1 .593-.592h6.815c.327 0 .593.265.593.592v3.408a4 4 0 0 1-4 4H5.926a.593.593 0 0 1-.593-.593V9.778a4.444 4.444 0 0 1 4.445-4.444h8.296Z"/></svg>' },
+        link: 'https://gitee.com/omni-soc-kit/open-wecom-skills',
+        ariaLabel: 'Gitee',
+      },
+      {
+        icon: { svg: '<svg viewBox="0 0 24 24"><path fill="currentColor" d="M2 2h20v20H2V2zm2 2v16h16V4H4zm3 3h10v2H7V7zm0 4h10v2H7v-2zm0 4h7v2H7v-2z"/></svg>' },
+        link: 'https://gitcode.com/omnisockit/OpenWecomSkills',
+        ariaLabel: 'GitCode',
+      },
     ],
 
     footer: {
