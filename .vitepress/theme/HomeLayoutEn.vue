@@ -155,25 +155,47 @@ function copyConfig() {
         </div>
         <div class="hc-heritage-badge">A YuanQue Open Ecosystem Project</div>
         <h2>6 Years Deep, Battle-Tested</h2>
-        <p class="hc-subtitle">Born from the YuanQue team's 6 years of hands-on WeCom development experience — not a documentation copy, but a battle-tested knowledge system trusted by 500+ enterprises</p>
-
-        <div class="hc-heritage-stats">
-          <div class="hc-heritage-stat">
-            <Building2 :size="24" class="hc-heritage-stat-icon" />
-            <strong>500+</strong>
-            <span>Enterprises Trust</span>
+        <p class="hc-subtitle">Born from the YuanQue team's 6 years of hands-on WeCom development experience</p>
+        <div class="hc-why-grid">
+          <div class="hc-why-card" style="--vc: #d97706; --i: 0">
+            <div class="hc-why-icon-wrap">
+              <Building2 :size="24" />
+            </div>
+            <h3>500+ Enterprises Trust</h3>
+            <p>Every gotcha guide, parameter constraint, and edge case comes from frontline practice, validated in production at scale</p>
+            <div class="hc-why-bullets">
+              <span class="hc-bullet">Battle-tested</span>
+              <span class="hc-bullet">Production-grade</span>
+            </div>
           </div>
-          <div class="hc-heritage-stat">
-            <Sparkles :size="24" class="hc-heritage-stat-icon" />
-            <strong>6 Years</strong>
-            <span>Deep in WeCom</span>
+          <div class="hc-why-card" style="--vc: #14b8a6; --i: 1">
+            <div class="hc-why-icon-wrap">
+              <Sparkles :size="24" />
+            </div>
+            <h3>6 Years in WeCom</h3>
+            <p>Covering the full WeCom business pipeline, from customer acquisition to data analytics</p>
+            <div class="hc-why-bullets">
+              <span class="hc-bullet">Acquire</span>
+              <span class="hc-bullet">Manage</span>
+              <span class="hc-bullet">Operate</span>
+              <span class="hc-bullet">Market</span>
+              <span class="hc-bullet">Serve</span>
+              <span class="hc-bullet">Analyze</span>
+            </div>
+          </div>
+          <div class="hc-why-card" style="--vc: #8b5cf6; --i: 2">
+            <div class="hc-why-icon-wrap">
+              <Package :size="24" />
+            </div>
+            <h3>YuanQue SCRM</h3>
+            <p>Open-source WeCom SCRM solution, 100% source code open, with AI customer service and private deployment</p>
+            <div class="hc-why-bullets">
+              <span class="hc-bullet">Open Source</span>
+              <span class="hc-bullet">AI Service</span>
+              <span class="hc-bullet">Private Deploy</span>
+            </div>
           </div>
         </div>
-
-        <blockquote class="hc-heritage-quote">
-          "Every gotcha guide, parameter constraint, and edge case comes from YuanQue SCRM’s frontline development practice, validated in production environments at scale."
-        </blockquote>
-
         <div class="hc-heritage-actions">
           <a href="https://www.iyque.cn/" target="_blank" class="hc-btn hc-btn--primary">
             <Building2 :size="16" />
@@ -487,50 +509,6 @@ function copyConfig() {
       </div>
     </section>
 
-    <!-- ══ Ecosystem ══ -->
-    <section class="hc-section hc-section--alt anim-section">
-      <div class="hc-container">
-        <div class="hc-section-head">
-          <Building2 :size="18" class="hc-label-icon" />
-          <span class="hc-label">Ecosystem</span>
-        </div>
-        <h2>YuanQue Open Ecosystem</h2>
-        <p class="hc-subtitle">Open WeCom Skills is a developer project within the YuanQue open ecosystem</p>
-        <div class="hc-eco-card">
-          <div class="hc-eco-card-header">
-            <Building2 :size="24" class="hc-eco-icon" />
-            <div>
-              <h3>YuanQue SCRM · Open-Source WeCom SCRM</h3>
-              <p>100% open source · AI customer service · Private deployment</p>
-            </div>
-          </div>
-          <div class="hc-eco-flow">
-            <span>Acquire</span>
-            <ChevronRight :size="14" />
-            <span>Manage</span>
-            <ChevronRight :size="14" />
-            <span>Operate</span>
-            <ChevronRight :size="14" />
-            <span>Market</span>
-            <ChevronRight :size="14" />
-            <span>Serve</span>
-            <ChevronRight :size="14" />
-            <span>Analyze</span>
-          </div>
-          <div class="hc-eco-actions">
-            <a href="https://www.iyque.cn/" target="_blank" class="hc-btn hc-btn--primary">
-              <Building2 :size="16" />
-              Learn about YuanQue SCRM
-            </a>
-            <a href="https://gitee.com/iyque/iYqueCode" target="_blank" class="hc-btn hc-btn--secondary">
-              <GitBranch :size="16" />
-              View Source
-              <ExternalLink :size="14" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
 
   </div>
 </template>
