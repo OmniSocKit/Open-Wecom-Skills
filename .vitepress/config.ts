@@ -87,9 +87,6 @@ export default defineConfig({
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
     ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap' }],
-    // 百度统计
-    ['script', {}, 'var _hmt = _hmt || [];'],
-    ['script', { async: '', src: 'https://hm.baidu.com/hm.js?f99234032d5ecb87b0a78b41f594b7ae' }],
   ],
 
   /* ── Source & Build ── */
@@ -260,5 +257,20 @@ export default defineConfig({
     search: {
       provider: 'local',
     },
+  },
+
+  /* ── 百度统计 ── */
+  transformHtml(code) {
+    const baiduScript = `
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?f99234032d5ecb87b0a78b41f594b7ae";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>`
+    return code.replace('</head>', baiduScript + '\n</head>')
   },
 })
