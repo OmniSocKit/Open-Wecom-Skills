@@ -44,7 +44,7 @@ Add one config to your AI tool and let AI master all WeCom APIs:
 }
 ```
 
-> Zero clone, zero config, AI reads SKILLs on demand — [See detailed setup for each tool](https://omnisockit.com/en/docs/guides/mcp-setup)
+> Zero clone, zero config, AI reads SKILLs on demand — [See detailed setup for each tool](https://openwecom.com/en/docs/guides/mcp-setup)
 
 Compatible with all mainstream AI tools: Claude Desktop / Claude Code / Cursor / Windsurf / VS Code + Copilot / Trae / Antigravity / Cline / Roo Code / Kilo Code / Continue / Cherry Studio / Zed / OpenAI Codex CLI, etc.
 
@@ -104,12 +104,12 @@ Open WeCom Skills works with the following AI tools (MCP recommended):
 
 | AI Tool | MCP Support | Manual Injection |
 |---------|:-----------:|------------------|
-| **Claude Desktop** | ✅ [Setup](https://omnisockit.com/en/docs/guides/mcp-setup#claude-desktop) | — |
-| **Claude Code** | ✅ [Setup](https://omnisockit.com/en/docs/guides/mcp-setup#claude-code) | `.claude/skills/` |
-| **Cursor** | ✅ [Setup](https://omnisockit.com/en/docs/guides/mcp-setup#cursor) | `.cursorrules` |
-| **Windsurf** | ✅ [Setup](https://omnisockit.com/en/docs/guides/mcp-setup#windsurf) | `.windsurfrules` |
-| **VS Code + Copilot** | ✅ [Setup](https://omnisockit.com/en/docs/guides/mcp-setup#vscode-copilot) | Context reference |
-| **Other MCP tools** | ✅ [Generic Setup](https://omnisockit.com/en/docs/guides/mcp-setup) | System Prompt |
+| **Claude Desktop** | ✅ [Setup](https://openwecom.com/en/docs/guides/mcp-setup#claude-desktop) | — |
+| **Claude Code** | ✅ [Setup](https://openwecom.com/en/docs/guides/mcp-setup#claude-code) | `.claude/skills/` |
+| **Cursor** | ✅ [Setup](https://openwecom.com/en/docs/guides/mcp-setup#cursor) | `.cursorrules` |
+| **Windsurf** | ✅ [Setup](https://openwecom.com/en/docs/guides/mcp-setup#windsurf) | `.windsurfrules` |
+| **VS Code + Copilot** | ✅ [Setup](https://openwecom.com/en/docs/guides/mcp-setup#vscode-copilot) | Context reference |
+| **Other MCP tools** | ✅ [Generic Setup](https://openwecom.com/en/docs/guides/mcp-setup) | System Prompt |
 
 ---
 
@@ -152,6 +152,6 @@ This project is licensed under [Apache License 2.0](LICENSE).
 
 **If you find this useful, please give it a ⭐ Star!**
 
-[Website](https://omnisockit.com) · [MCP Server](https://www.npmjs.com/package/@omnisockit/mcp-server) · [Issues](https://github.com/OmniSocKit/Open-Wecom-Skills/issues)
+[Website](https://openwecom.com) · [MCP Server](https://www.npmjs.com/package/@omnisockit/mcp-server) · [Issues](https://github.com/OmniSocKit/Open-Wecom-Skills/issues)
 
 </div>
