@@ -146,6 +146,48 @@ function copyConfig() {
       </div>
     </section>
 
+    <!-- ══ Heritage ══ -->
+    <section class="hc-section hc-section--heritage anim-section">
+      <div class="hc-container">
+        <div class="hc-section-head">
+          <Building2 :size="18" class="hc-label-icon" />
+          <span class="hc-label">Heritage</span>
+        </div>
+        <div class="hc-heritage-badge">A YuanQue Open Ecosystem Project</div>
+        <h2>6 Years Deep, Battle-Tested</h2>
+        <p class="hc-subtitle">Born from the YuanQue team's 6 years of hands-on WeCom development experience — not a documentation copy, but a battle-tested knowledge system trusted by 500+ enterprises</p>
+
+        <div class="hc-heritage-stats">
+          <div class="hc-heritage-stat">
+            <Building2 :size="24" class="hc-heritage-stat-icon" />
+            <strong>500+</strong>
+            <span>Enterprises Trust</span>
+          </div>
+          <div class="hc-heritage-stat">
+            <Sparkles :size="24" class="hc-heritage-stat-icon" />
+            <strong>6 Years</strong>
+            <span>Deep in WeCom</span>
+          </div>
+        </div>
+
+        <blockquote class="hc-heritage-quote">
+          "Every gotcha guide, parameter constraint, and edge case comes from YuanQue SCRM’s frontline development practice, validated in production environments at scale."
+        </blockquote>
+
+        <div class="hc-heritage-actions">
+          <a href="https://www.iyque.cn/" target="_blank" class="hc-btn hc-btn--primary">
+            <Building2 :size="16" />
+            Learn about YuanQue SCRM
+          </a>
+          <a href="https://gitee.com/iyque/iYqueCode" target="_blank" class="hc-btn hc-btn--secondary">
+            <GitBranch :size="16" />
+            View Source
+            <ExternalLink :size="14" />
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- ══ What ══ -->
     <section class="hc-section anim-section">
       <div class="hc-container">
@@ -441,6 +483,51 @@ function copyConfig() {
           <a href="https://gitcode.com/omnisockit/OpenWecomSkills" target="_blank" class="hc-btn hc-btn--secondary hc-btn--sm">
             <GitBranch :size="14" /> GitCode
           </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ Ecosystem ══ -->
+    <section class="hc-section hc-section--alt anim-section">
+      <div class="hc-container">
+        <div class="hc-section-head">
+          <Building2 :size="18" class="hc-label-icon" />
+          <span class="hc-label">Ecosystem</span>
+        </div>
+        <h2>YuanQue Open Ecosystem</h2>
+        <p class="hc-subtitle">Open WeCom Skills is a developer project within the YuanQue open ecosystem</p>
+        <div class="hc-eco-card">
+          <div class="hc-eco-card-header">
+            <Building2 :size="24" class="hc-eco-icon" />
+            <div>
+              <h3>YuanQue SCRM · Open-Source WeCom SCRM</h3>
+              <p>100% open source · AI customer service · Private deployment</p>
+            </div>
+          </div>
+          <div class="hc-eco-flow">
+            <span>Acquire</span>
+            <ChevronRight :size="14" />
+            <span>Manage</span>
+            <ChevronRight :size="14" />
+            <span>Operate</span>
+            <ChevronRight :size="14" />
+            <span>Market</span>
+            <ChevronRight :size="14" />
+            <span>Serve</span>
+            <ChevronRight :size="14" />
+            <span>Analyze</span>
+          </div>
+          <div class="hc-eco-actions">
+            <a href="https://www.iyque.cn/" target="_blank" class="hc-btn hc-btn--primary">
+              <Building2 :size="16" />
+              Learn about YuanQue SCRM
+            </a>
+            <a href="https://gitee.com/iyque/iYqueCode" target="_blank" class="hc-btn hc-btn--secondary">
+              <GitBranch :size="16" />
+              View Source
+              <ExternalLink :size="14" />
+            </a>
+          </div>
         </div>
       </div>
     </section>

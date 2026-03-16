@@ -147,6 +147,48 @@ function copyConfig() {
       </div>
     </section>
 
+    <!-- ══ Heritage ══ -->
+    <section class="hc-section hc-section--heritage anim-section">
+      <div class="hc-container">
+        <div class="hc-section-head">
+          <Building2 :size="18" class="hc-label-icon" />
+          <span class="hc-label">Heritage</span>
+        </div>
+        <div class="hc-heritage-badge">源雀开源生态项目</div>
+        <h2>六年深耕，实战淬炼</h2>
+        <p class="hc-subtitle">源于源雀团队六年深耕企微生态的一线实战积累，不是文档搬运，而是 500+ 企业验证的实战知识体系</p>
+
+        <div class="hc-heritage-stats">
+          <div class="hc-heritage-stat">
+            <Building2 :size="24" class="hc-heritage-stat-icon" />
+            <strong>500+</strong>
+            <span>企业信赖</span>
+          </div>
+          <div class="hc-heritage-stat">
+            <Sparkles :size="24" class="hc-heritage-stat-icon" />
+            <strong>6 年</strong>
+            <span>深耕企微生态</span>
+          </div>
+        </div>
+
+        <blockquote class="hc-heritage-quote">
+          “每一个踩坑指南、参数约束、边界条件，都来自源雀 SCRM 的一线开发实践，经过大量生产环境验证。”
+        </blockquote>
+
+        <div class="hc-heritage-actions">
+          <a href="https://www.iyque.cn/" target="_blank" class="hc-btn hc-btn--primary">
+            <Building2 :size="16" />
+            了解源雀 SCRM
+          </a>
+          <a href="https://gitee.com/iyque/iYqueCode" target="_blank" class="hc-btn hc-btn--secondary">
+            <GitBranch :size="16" />
+            查看开源
+            <ExternalLink :size="14" />
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- ══ What ══ -->
     <section class="hc-section anim-section">
       <div class="hc-container">
@@ -442,6 +484,51 @@ function copyConfig() {
           <a href="https://gitcode.com/omnisockit/OpenWecomSkills" target="_blank" class="hc-btn hc-btn--secondary hc-btn--sm">
             <GitBranch :size="14" /> GitCode
           </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ Ecosystem ══ -->
+    <section class="hc-section hc-section--alt anim-section">
+      <div class="hc-container">
+        <div class="hc-section-head">
+          <Building2 :size="18" class="hc-label-icon" />
+          <span class="hc-label">Ecosystem</span>
+        </div>
+        <h2>源雀开源生态</h2>
+        <p class="hc-subtitle">Open WeCom Skills 是源雀开源生态中的开发者项目</p>
+        <div class="hc-eco-card">
+          <div class="hc-eco-card-header">
+            <Building2 :size="24" class="hc-eco-icon" />
+            <div>
+              <h3>源雀 SCRM · 开源企微 SCRM 解决方案</h3>
+              <p>源码 100% 开放 · AI 智能客服 · 私有化部署</p>
+            </div>
+          </div>
+          <div class="hc-eco-flow">
+            <span>拓客</span>
+            <ChevronRight :size="14" />
+            <span>管理</span>
+            <ChevronRight :size="14" />
+            <span>运营</span>
+            <ChevronRight :size="14" />
+            <span>营销</span>
+            <ChevronRight :size="14" />
+            <span>服务</span>
+            <ChevronRight :size="14" />
+            <span>分析</span>
+          </div>
+          <div class="hc-eco-actions">
+            <a href="https://www.iyque.cn/" target="_blank" class="hc-btn hc-btn--primary">
+              <Building2 :size="16" />
+              了解源雀 SCRM
+            </a>
+            <a href="https://gitee.com/iyque/iYqueCode" target="_blank" class="hc-btn hc-btn--secondary">
+              <GitBranch :size="16" />
+              查看开源
+              <ExternalLink :size="14" />
+            </a>
+          </div>
         </div>
       </div>
     </section>

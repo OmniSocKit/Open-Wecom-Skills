@@ -63,6 +63,8 @@
 .hc-section:nth-child(7) { animation-delay: 0.35s; }
 .hc-section:nth-child(8) { animation-delay: 0.4s; }
 .hc-section:nth-child(9) { animation-delay: 0.45s; }
+.hc-section:nth-child(10) { animation-delay: 0.5s; }
+.hc-section:nth-child(11) { animation-delay: 0.55s; }
 
 /* ── Hero ── */
 
@@ -837,6 +839,191 @@
   flex-wrap: wrap;
 }
 
+/* ── Heritage ── */
+
+.hc-section--heritage {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.04), rgba(20, 184, 166, 0.04));
+}
+
+.dark .hc-section--heritage {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.06), rgba(20, 184, 166, 0.04));
+}
+
+.hc-heritage-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 16px;
+  border-radius: 100px;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(20, 184, 166, 0.1));
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  color: #d97706;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  margin-bottom: 16px;
+}
+
+.dark .hc-heritage-badge {
+  color: #fbbf24;
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
+.hc-heritage-stats {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-bottom: 32px;
+}
+
+.hc-heritage-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 24px 40px;
+  border-radius: var(--hc-radius);
+  border: 1px solid var(--hc-border);
+  background: var(--vp-c-bg);
+  transition: all 0.3s;
+}
+
+.hc-heritage-stat:hover {
+  box-shadow: var(--hc-shadow);
+  transform: translateY(-3px);
+}
+
+.hc-heritage-stat-icon {
+  color: #d97706;
+  margin-bottom: 4px;
+}
+
+.dark .hc-heritage-stat-icon {
+  color: #fbbf24;
+}
+
+.hc-heritage-stat strong {
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: 'Space Grotesk', sans-serif;
+  background: linear-gradient(135deg, #d97706, var(--hc-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hc-heritage-stat span {
+  font-size: 13px;
+  color: var(--hc-text2);
+  font-weight: 600;
+}
+
+.hc-heritage-quote {
+  max-width: 600px;
+  margin: 0 auto 28px;
+  padding: 20px 28px;
+  border-radius: var(--hc-radius);
+  border: none;
+  border-left: 3px solid #d97706;
+  background: rgba(245, 158, 11, 0.04);
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--hc-text2);
+  font-style: italic;
+  text-align: left;
+}
+
+.dark .hc-heritage-quote {
+  background: rgba(245, 158, 11, 0.06);
+  border-left-color: #fbbf24;
+}
+
+.hc-heritage-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* ── Ecosystem ── */
+
+.hc-eco-card {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 28px;
+  border-radius: var(--hc-radius);
+  border: 1px solid var(--hc-border);
+  background: var(--vp-c-bg);
+  text-align: left;
+  transition: all 0.3s;
+}
+
+.hc-eco-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transform: translateY(-3px);
+}
+
+.dark .hc-eco-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.hc-eco-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.hc-eco-icon {
+  color: #d97706;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.dark .hc-eco-icon {
+  color: #fbbf24;
+}
+
+.hc-eco-card-header h3 {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0 0 4px;
+  border: none;
+}
+
+.hc-eco-card-header p {
+  font-size: 13px;
+  color: var(--hc-text2);
+  margin: 0;
+}
+
+.hc-eco-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 0;
+  margin-bottom: 20px;
+  border-top: 1px solid var(--hc-border);
+  border-bottom: 1px solid var(--hc-border);
+}
+
+.hc-eco-flow span {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--hc-text);
+}
+
+.hc-eco-flow svg {
+  color: var(--hc-text2);
+  opacity: 0.5;
+}
+
+.hc-eco-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
 /* ── Responsive ── */
 
 @media (max-width: 720px) {
@@ -858,5 +1045,22 @@
   .hc-showcase-table thead tr,
   .hc-showcase-table tbody tr {
     grid-template-columns: 90px 1fr 1fr;
+  }
+
+  .hc-heritage-stats {
+    gap: 16px;
+  }
+
+  .hc-heritage-stat {
+    padding: 16px 24px;
+  }
+
+  .hc-heritage-stat strong {
+    font-size: 1.5rem;
+  }
+
+  .hc-eco-flow {
+    flex-wrap: wrap;
+    gap: 4px;
   }
 }

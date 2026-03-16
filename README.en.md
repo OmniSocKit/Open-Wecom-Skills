@@ -17,13 +17,16 @@ English | [简体中文](./README.md)
 
 ## ✨ What is this?
 
-Open WeCom Skills is a **structured knowledge system** for AI models, purpose-built for WeCom (Enterprise WeChat) development.
+Open WeCom Skills is a **structured knowledge system** for AI models, purpose-built for WeCom (Enterprise WeChat) development — born from the [YuanQue](https://www.iyque.cn/) team's **6 years of deep WeCom expertise serving 500+ enterprises**.
 
 It's not a copy of official docs — it's **AI-optimized knowledge engineering**:
 
 - 🎯 **Precise API Knowledge** — Every endpoint's params, responses, and limits are structurally documented, eliminating AI hallucination
-- 🛡️ **Gotcha Guide** — Built-in trap detection distilled from real-world experience, so AI proactively avoids pitfalls
+- 🛡️ **Gotcha Guide** — Built-in trap detection distilled from battle-tested production experience, so AI proactively avoids pitfalls
 - ⚡ **Ready-to-use Templates** — Python / TypeScript / Go / Java / PHP code templates for direct project scaffolding
+
+> 💡 **A YuanQue Open Ecosystem Project** — Every gotcha guide, parameter constraint, and edge case in this project comes from [YuanQue SCRM](https://www.iyque.cn/)'s frontline development practice, validated in production environments at scale.
+> [Learn about YuanQue SCRM](https://www.iyque.cn/) · [View Source Code](https://gitee.com/iyque/iYqueCode)
 
 ---
 
@@ -134,6 +137,15 @@ The MCP Server is designed with a **knowledge-only, zero side-effect** principle
 Contributions welcome! See [Contributing Guide](CONTRIBUTING.en.md) for details.
 
 TL;DR: Fork → Add/Edit SKILL → Submit PR
+
+---
+
+## 🌐 YuanQue Open Ecosystem
+
+Open WeCom Skills is a developer project within the [YuanQue](https://www.iyque.cn/) open ecosystem.
+
+- 💼 **Need a complete WeCom SCRM solution?** → [YuanQue SCRM](https://gitee.com/iyque/iYqueCode)
+  100% open source · Private deployment · AI customer service · Chat archiving
 
 ---
 
