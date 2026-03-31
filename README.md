@@ -18,7 +18,7 @@
 
 ## ✨ 这是什么
 
-Open WeCom Skills 是一套面向 AI 大模型的**企业微信开发结构化知识体系**，源于 [源雀](https://www.iyque.cn/) 团队**六年深耕企微生态、服务 500+ 企业**的实战经验结晶。
+Open WeCom Skills 是一套面向 AI 大模型的**企业微信开发结构化知识体系**，源于 [源雀](https://iyuanque.cn/) 团队**六年深耕企微生态、服务 500+ 企业**的实战经验结晶。
 
 它不是官方文档的搬运，而是一套**为 AI 深度优化**的知识工程：
 
@@ -26,8 +26,8 @@ Open WeCom Skills 是一套面向 AI 大模型的**企业微信开发结构化�
 - 🛡️ **踩坑指南** — 内置 Gotcha Guide，提炼真实项目中的实战经验，让 AI 主动避坑
 - ⚡ **即用代码模板** — Python / TypeScript / Go / Java / PHP 五语言模板，可直接生成项目代码
 
-> 💡 **源雀开源生态项目** — 本项目中的每一个踩坑指南、参数约束、边界条件，都来自 [源雀 SCRM](https://www.iyque.cn/) 的一线开发实践，经过大量生产环境验证。
-> [了解源雀 SCRM](https://www.iyque.cn/) · [查看开源](https://gitee.com/iyque/iYqueCode)
+> 💡 **源雀开源生态项目** — 本项目中的每一个踩坑指南、参数约束、边界条件，都来自 [源雀 SCRM](https://iyuanque.cn/) 的一线开发实践，经过大量生产环境验证。
+> [了解源雀 SCRM](https://iyuanque.cn/) · [查看开源](https://gitee.com/iyque/iYqueCode)
 
 ### 有 SKILL vs 没有 SKILL
 
@@ -246,7 +246,7 @@ MCP Server 的设计原则是**纯知识交付，零副作用**：
 
 ## 🌐 源雀开源生态
 
-Open WeCom Skills 是 [源雀](https://www.iyque.cn/) 开源生态中的开发者项目。
+Open WeCom Skills 是 [源雀](https://iyuanque.cn/) 开源生态中的开发者项目。
 
 - 💼 **需要完整的企微 SCRM 解决方案？** → [源雀 SCRM](https://gitee.com/iyque/iYqueCode)
   源码 100% 开放 · 支持私有化部署 · AI 智能客服 · 会话存档

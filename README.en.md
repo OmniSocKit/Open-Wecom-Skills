@@ -17,7 +17,7 @@ English | [简体中文](./README.md)
 
 ## ✨ What is this?
 
-Open WeCom Skills is a **structured knowledge system** for AI models, purpose-built for WeCom (Enterprise WeChat) development — born from the [YuanQue](https://www.iyque.cn/) team's **6 years of deep WeCom expertise serving 500+ enterprises**.
+Open WeCom Skills is a **structured knowledge system** for AI models, purpose-built for WeCom (Enterprise WeChat) development — born from the [YuanQue](https://iyuanque.cn/) team's **6 years of deep WeCom expertise serving 500+ enterprises**.
 
 It's not a copy of official docs — it's **AI-optimized knowledge engineering**:
 
@@ -25,8 +25,8 @@ It's not a copy of official docs — it's **AI-optimized knowledge engineering**
 - 🛡️ **Gotcha Guide** — Built-in trap detection distilled from battle-tested production experience, so AI proactively avoids pitfalls
 - ⚡ **Ready-to-use Templates** — Python / TypeScript / Go / Java / PHP code templates for direct project scaffolding
 
-> 💡 **A YuanQue Open Ecosystem Project** — Every gotcha guide, parameter constraint, and edge case in this project comes from [YuanQue SCRM](https://www.iyque.cn/)'s frontline development practice, validated in production environments at scale.
-> [Learn about YuanQue SCRM](https://www.iyque.cn/) · [View Source Code](https://gitee.com/iyque/iYqueCode)
+> 💡 **A YuanQue Open Ecosystem Project** — Every gotcha guide, parameter constraint, and edge case in this project comes from [YuanQue SCRM](https://iyuanque.cn/)'s frontline development practice, validated in production environments at scale.
+> [Learn about YuanQue SCRM](https://iyuanque.cn/) · [View Source Code](https://gitee.com/iyque/iYqueCode)
 
 ---
 
@@ -142,7 +142,7 @@ TL;DR: Fork → Add/Edit SKILL → Submit PR
 
 ## 🌐 YuanQue Open Ecosystem
 
-Open WeCom Skills is a developer project within the [YuanQue](https://www.iyque.cn/) open ecosystem.
+Open WeCom Skills is a developer project within the [YuanQue](https://iyuanque.cn/) open ecosystem.
 
 - 💼 **Need a complete WeCom SCRM solution?** → [YuanQue SCRM](https://gitee.com/iyque/iYqueCode)
   100% open source · Private deployment · AI customer service · Chat archiving
