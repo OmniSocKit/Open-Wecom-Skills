@@ -134,7 +134,7 @@ export default defineConfig({
               { text: '第三方应用', link: '/skills/third-party/wecom-3rd-quickstart' },
             ],
           },
-          { text: '源雀 SCRM', link: 'https://www.iyque.cn/' },
+          { text: '源雀 SCRM', link: 'https://iyuanque.cn/' },
         ],
         sidebar: {
           '/docs/': [
@@ -200,7 +200,7 @@ export default defineConfig({
               { text: 'Third-Party Apps', link: '/en/skills/third-party/wecom-3rd-quickstart' },
             ],
           },
-          { text: 'YuanQue SCRM', link: 'https://www.iyque.cn/' },
+          { text: 'YuanQue SCRM', link: 'https://iyuanque.cn/' },
         ],
         sidebar: {
           '/en/docs/': [

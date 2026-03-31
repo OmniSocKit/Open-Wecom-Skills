@@ -197,7 +197,7 @@ function copyConfig() {
           </div>
         </div>
         <div class="hc-heritage-actions">
-          <a href="https://www.iyque.cn/" target="_blank" class="hc-btn hc-btn--primary">
+          <a href="https://iyuanque.cn/" target="_blank" class="hc-btn hc-btn--primary">
             <Building2 :size="16" />
             Learn about YuanQue SCRM
           </a>
